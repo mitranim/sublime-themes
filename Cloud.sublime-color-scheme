@@ -37,7 +37,11 @@
   },
   "rules": [
     {
-      "scope": "comment, punctuation",
+      "scope": "punctuation.section",
+      "foreground": "var(comment_fg)",
+    },
+    {
+      "scope": "comment",
       "foreground": "var(comment_fg)",
     },
     {
@@ -61,12 +65,12 @@
       "foreground": "var(string_fg)",
     },
     {
-      "scope": "constant, variable.language",
+      "scope": "constant, variable.language, support.constant",
       "background": "var(constant_bg)",
       "foreground": "var(constant_fg)",
     },
     {
-      "scope": "constant.numeric, constant.numeric punctuation",
+      "scope": "constant.numeric",
       "background": "var(constant_bg)",
       "foreground": "var(constant_fg)",
     },
