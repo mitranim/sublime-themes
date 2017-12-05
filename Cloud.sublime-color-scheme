@@ -119,7 +119,7 @@
       "foreground": "var(storage_fg)",
     },
     {
-      "scope": "variable, entity.name, support.function",
+      "scope": "variable.function, entity.name, support.function",
       "background": "var(var_bg)",
       "foreground": "var(var_fg)",
     },
