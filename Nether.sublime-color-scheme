@@ -101,7 +101,7 @@
       "font_style": "bold",
     },
     {
-      "scope": "constant, variable.language, support.constant",
+      "scope": "constant, variable.language, support.constant, variable.other.constant",
       "background": "var(constant_bg)",
       "foreground": "var(constant_fg)",
     },
