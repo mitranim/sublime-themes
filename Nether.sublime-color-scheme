@@ -9,7 +9,7 @@
     "dark_red": "hsl(338, 95%, 56%)",
     "warm_pink": "hsl(334, 100%, 80%)",
     "soft_yellow": "hsl(44, 61%, 78%)",
-    "cyan": "hsl(190, 80%, 55%)",
+    "dark_cyan": "hsl(220, 50%, 70%)",
     "light_cyan": "hsl(190, 80%, 70%)",
 
     "bg": "hsl(200, 5%, 11%)",
@@ -23,7 +23,7 @@
     "operator_bg": "var(bg)",
     "operator_fg": "var(fg)",
     "storage_bg": "var(bg)",
-    "storage_fg": "var(cyan)",
+    "storage_fg": "var(dark_cyan)",
     "constant_bg": "var(bg)",
     "constant_fg": "hsl(261, 100%, 75%)",
     "var_bg": "var(bg)",
@@ -40,7 +40,7 @@
     "symbol_bg": "var(bg)",
     "symbol_fg": "var(keyword_fg)",
     "xml_tag_bg": "var(bg)",
-    "xml_tag_fg": "var(cyan)",
+    "xml_tag_fg": "var(dark_cyan)",
     "xml_bracket_bg": "var(bg)",
     "xml_bracket_fg": "var(xml_tag_fg)",
     "xml_attr_bg": "var(bg)",
@@ -86,7 +86,7 @@
     },
     {
       "scope": "invalid.deprecated",
-      "background": "pink",
+      "background": "color(red alpha(0.3))",
       "font_style": "italic",
     },
     {
