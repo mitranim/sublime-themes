@@ -99,7 +99,7 @@
       "foreground": "var(constant_fg)",
     },
     {
-      "scope": "constant.other.symbol",
+      "scope": "constant.other.symbol, meta.annotation",
       "background": "var(symbol_bg)",
       "foreground": "var(symbol_fg)",
     },
@@ -119,7 +119,7 @@
       "foreground": "var(storage_fg)",
     },
     {
-      "scope": "variable.function, entity.name, support.function",
+      "scope": "variable.function, entity.name, support.function, variable.parameter",
       "background": "var(var_bg)",
       "foreground": "var(var_fg)",
     },
