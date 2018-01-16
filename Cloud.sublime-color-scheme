@@ -99,7 +99,7 @@
       "foreground": "var(constant_fg)",
     },
     {
-      "scope": "constant.other.symbol, meta.annotation",
+      "scope": "constant.other.symbol, punctuation.definition.annotation, variable.annotation",
       "background": "var(symbol_bg)",
       "foreground": "var(symbol_fg)",
     },
