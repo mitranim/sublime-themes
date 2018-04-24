@@ -99,7 +99,7 @@
       "foreground": "var(constant_fg)",
     },
     {
-      "scope": "constant.other.symbol, punctuation.definition.annotation, variable.annotation",
+      "scope": "constant.other.symbol, punctuation.definition.annotation, variable.annotation, keyword.operator.macro",
       "background": "var(symbol_bg)",
       "foreground": "var(symbol_fg)",
     },
@@ -185,6 +185,11 @@
       "scope": "markup.raw, markup.output",
       "background": "var(raw_bg)",
       "foreground": "var(raw_fg)",
+    },
+    {
+      "scope": "markup.link, markup.underline.link",
+      "background": "var(bg)",
+      "foreground": "var(var_fg)",
     },
   ]
 }
