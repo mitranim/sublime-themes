@@ -10,7 +10,7 @@
     "warm_pink": "hsl(334, 100%, 80%)",
     "soft_yellow": "hsl(44, 61%, 78%)",
     "dark_cyan": "hsl(220, 50%, 70%)",
-    "light_cyan": "hsl(190, 80%, 70%)",
+    "light_cyan": "hsl(190, 80%, 75%)",
 
     "bg": "hsl(200, 5%, 11%)",
     "fg": "hsl(0, 0%, 90%)",
@@ -74,11 +74,11 @@
       "background": "var(comment_block_bg)",
       "foreground": "var(comment_block_fg)",
     },
-    {
-      "scope": "punctuation.section",
-      "background": "var(comment_bg)",
-      "foreground": "var(comment_fg)",
-    },
+    // {
+    //   "scope": "punctuation.section",
+    //   "background": "var(comment_bg)",
+    //   "foreground": "var(comment_fg)",
+    // },
     {
       "scope": "invalid.illegal",
       "background": "red",
@@ -101,7 +101,11 @@
       "font_style": "bold",
     },
     {
-      "scope": "constant, variable.language, support.constant, variable.other.constant",
+      "scope": "constant.numeric.rune.escape",
+      "font_style": "bold",
+    },
+    {
+      "scope": "constant, variable.language, support.constant",
       "background": "var(constant_bg)",
       "foreground": "var(constant_fg)",
     },
@@ -111,12 +115,16 @@
       "foreground": "var(constant_fg)",
     },
     {
+      "scope": "constant.numeric.octal",
+      "foreground": "magenta",
+    },
+    {
       "scope": "constant.other.symbol, punctuation.definition.annotation, variable.annotation, keyword.operator.macro",
       "background": "var(symbol_bg)",
       "foreground": "var(symbol_fg)",
     },
     {
-      "scope": "keyword",
+      "scope": "keyword, punctuation.accessor.dot",
       "background": "var(keyword_bg)",
       "foreground": "var(keyword_fg)",
     },
@@ -126,17 +134,20 @@
     //   "foreground": "var(operator_fg)",
     // },
     {
-      "scope": "storage",
+      "scope": "storage, punctuation.definition.numeric, punctuation.separator.ratio",
       "background": "var(storage_bg)",
       "foreground": "var(storage_fg)",
     },
     {
-      "scope": "variable.function, entity.name, support.function, variable.parameter",
+      // "scope": "variable.function, support.function, variable.other.member",
+      "scope": "variable.function, support.function",
       "background": "var(var_bg)",
       "foreground": "var(var_fg)",
     },
     {
-      "scope": "entity.name",
+      "scope": "entity.name, variable.declaration, variable.other.constant.declaration, variable.other.member.declaration, variable.parameter",
+      "background": "var(var_bg)",
+      "foreground": "var(var_fg)",
       "font_style": "italic",
     },
     {
@@ -145,7 +156,7 @@
       "foreground": "var(name_fg)",
     },
     {
-      "scope": "entity.name.type, entity.name.class, support.type, support.class, entity.other.inherited-class",
+      "scope": "entity.name.type, entity.name.class, entity.name.struct, entity.name.enum, entity.name.union, entity.name.trait, entity.name.interface, support.type, support.class, entity.other.inherited-class",
       "background": "var(type_bg)",
       "foreground": "var(type_fg)",
     },
@@ -194,7 +205,7 @@
       "font_style": "italic",
     },
     {
-      "scope": "markup.raw, markup.output",
+      "scope": "markup.raw, markup.output, punctuation.definition.thematic-break",
       "background": "var(raw_bg)",
       "foreground": "var(raw_fg)",
     },
