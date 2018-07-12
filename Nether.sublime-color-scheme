@@ -90,18 +90,17 @@
       "font_style": "italic",
     },
     {
-      "scope": "string, constant.character",
+      "scope": "string",
       "background": "var(string_bg)",
       "foreground": "var(string_fg)",
     },
     {
-      "scope": "constant.character.escape",
-      "background": "var(string_escape_bg)",
-      "foreground": "var(string_escape_fg)",
-      "font_style": "bold",
+      "scope": "string constant.character",
+      "background": "var(string_bg)",
+      "foreground": "var(string_fg)"
     },
     {
-      "scope": "constant.numeric.rune.escape",
+      "scope": "constant.character.escape, constant.numeric.rune.escape",
       "font_style": "bold",
     },
     {
@@ -110,7 +109,7 @@
       "foreground": "var(constant_fg)",
     },
     {
-      "scope": "constant.numeric",
+      "scope": "constant.numeric, constant.character",
       "background": "var(constant_bg)",
       "foreground": "var(constant_fg)",
     },
