@@ -75,18 +75,20 @@
       "foreground": "var(comment_block_fg)",
     },
     // {
-    //   "scope": "punctuation.section",
+    //   "scope": "punctuation.section, punctuation.definition",
     //   "background": "var(comment_bg)",
     //   "foreground": "var(comment_fg)",
     // },
     {
       "scope": "invalid.illegal",
       "background": "red",
+      "foreground": "var(fg)",
       "foreground": "white",
     },
     {
       "scope": "invalid.deprecated",
       "background": "color(red alpha(0.3))",
+      "foreground": "var(fg)",
       "font_style": "italic",
     },
     {
@@ -97,7 +99,7 @@
     {
       "scope": "string constant.character",
       "background": "var(string_bg)",
-      "foreground": "var(string_fg)"
+      "foreground": "var(string_fg)",
     },
     {
       "scope": "constant.character.escape, constant.numeric.rune.escape",
@@ -212,6 +214,42 @@
       "scope": "markup.link, markup.underline.link",
       "background": "var(bg)",
       "foreground": "var(var_fg)",
+    },
+
+    /* Syntax-specific */
+
+    // JSCustom
+    {
+      "scope": "source.js meta.object-literal.key",
+      "background": "var(string_bg)",
+      "foreground": "var(string_fg)",
+    },
+    {
+      "scope": "source.js support.constant.dom",
+      "background": "var(bg)",
+      "foreground": "var(fg)",
+    },
+    {
+      "scope": "source.js punctuation.definition.template-expression",
+      "background": "var(keyword_bg)",
+      "foreground": "var(keyword_fg)",
+    },
+    // Star imports and exports are operators, not constants
+    {
+      "scope": "meta.import.js constant.other.js, meta.export.js constant.other.js",
+      "background": "var(keyword_bg)",
+      "foreground": "var(keyword_fg)",
+    },
+    {
+      "scope": "source.js variable.type, source.js variable.other.class",
+      "background": "var(type_bg)",
+      "foreground": "var(type_fg)",
+    },
+    {
+      "scope": "source.js meta.binding.name, meta.export.js variable.other.readwrite.js - meta.block",
+      "background": "var(var_bg)",
+      "foreground": "var(var_fg)",
+      "font_style": "italic",
     },
   ]
 }
