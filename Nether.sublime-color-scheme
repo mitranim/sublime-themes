@@ -75,7 +75,7 @@
       "foreground": "var(comment_block_fg)",
     },
     // {
-    //   "scope": "punctuation.section, punctuation.definition",
+    //   "scope": "punctuation.section",
     //   "background": "var(comment_bg)",
     //   "foreground": "var(comment_fg)",
     // },
@@ -129,13 +129,21 @@
       "background": "var(keyword_bg)",
       "foreground": "var(keyword_fg)",
     },
+    {
+      "scope": "punctuation.separator.decimal - invalid, punctuation.separator.exponent - invalid",
+      "background": "var(bg)",
+    },
+    {
+      "scope": "punctuation.definition.numeric - invalid, punctuation.separator.ratio - invalid",
+      "background": "var(bg)",
+    },
     // {
     //   "scope": "keyword.operator",
     //   "background": "var(operator_bg)",
     //   "foreground": "var(operator_fg)",
     // },
     {
-      "scope": "storage, punctuation.definition.numeric, punctuation.separator.ratio",
+      "scope": "storage",
       "background": "var(storage_bg)",
       "foreground": "var(storage_fg)",
     },
