@@ -1,17 +1,27 @@
 ## Overview
 
-Custom themes and color schemes for Sublime Text.
-
-This uses the new `.sublime-color-scheme` format and requires **at least version 3149** of Sublime.
+Custom themes and color schemes for Sublime Text. Uses the new `.sublime-color-scheme` format and requires **at least version 3149** of Sublime.
 
 ## Installation
 
-Clone or download the repo into Sublime's Packages folder. On MacOS, this is usually `"/Users/<user>/Library/Application Support/Sublime Text 3/Packages"`. Find it in menu → Preferences → Browse Packages.
+Clone or download the repo into Sublime's Packages folder. On MacOS, this is usually:
 
-To activate the color scheme: `Command Palette → UI: Select Color Scheme → Cloud / Nether`. If you don't see a scheme, this probably means you have a **lower than 3149** version of Sublime and need to update.
+    "/Users/<user>/Library/Application Support/Sublime Text 3/Packages"
 
-Make the entire editor match the color scheme by using the built-in Adaptive theme: `Command Palette → UI: Select Theme → Adaptive`.
+Reminder how to open the Packages folder:
 
-## Misc
+    menu -> Preferences -> Browse Packages
 
-License: https://en.wikipedia.org/wiki/WTFPL
+Activate:
+
+    Command Palette -> UI: Select Color Scheme -> Cloud
+    # or
+    Command Palette -> UI: Select Color Scheme -> Nether
+
+Use the built-in Adaptive theme to match the color scheme:
+
+    Command Palette -> UI: Select Theme -> Adaptive
+
+## License
+
+https://en.wikipedia.org/wiki/WTFPL

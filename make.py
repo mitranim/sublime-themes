@@ -1,6 +1,5 @@
-#!/usr/bin/env python3
-
 import re
+from os import path
 from collections import OrderedDict
 import json
 import sublime
