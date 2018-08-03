@@ -1,0 +1,200 @@
+{
+  "rules": [
+    {
+      "scope": "comment",
+      "background": "var(comment_bg)",
+      "foreground": "var(comment_fg)",
+    },
+    {
+      "scope": "comment.documentation, comment.block.documentation",
+      "background": "var(comment_block_bg)",
+      "foreground": "var(comment_block_fg)",
+    },
+    // {
+    //   "scope": "punctuation.section",
+    //   "background": "var(comment_bg)",
+    //   "foreground": "var(comment_fg)",
+    // },
+    {
+      "scope": "invalid.illegal",
+      "background": "var(illegal_bg)",
+      "foreground": "var(illegal_fg)",
+    },
+    {
+      "scope": "invalid.deprecated",
+      "background": "var(deprecated_bg)",
+      "foreground": "var(deprecated_fg)",
+      "font_style": "italic",
+    },
+    {
+      "scope": "string",
+      "background": "var(string_bg)",
+      "foreground": "var(string_fg)",
+    },
+    {
+      "scope": "string constant.character",
+      "background": "var(string_bg)",
+      "foreground": "var(string_fg)",
+    },
+    {
+      "scope": "constant.character.escape, constant.numeric.rune.escape",
+      "font_style": "bold",
+    },
+    {
+      "scope": "constant, variable.language, support.constant",
+      "background": "var(constant_bg)",
+      "foreground": "var(constant_fg)",
+    },
+    {
+      "scope": "constant.numeric, constant.character",
+      "background": "var(constant_bg)",
+      "foreground": "var(constant_fg)",
+    },
+    {
+      "scope": "constant.numeric.octal",
+      "background": "var(bg)",
+      "foreground": "magenta",
+    },
+    {
+      "scope": "constant.other.symbol, punctuation.definition.annotation, variable.annotation, keyword.operator.macro",
+      "background": "var(symbol_bg)",
+      "foreground": "var(symbol_fg)",
+    },
+    {
+      "scope": "keyword, punctuation.accessor.dot",
+      "background": "var(keyword_bg)",
+      "foreground": "var(keyword_fg)",
+    },
+    // {
+    //   "scope": "punctuation.separator.decimal, punctuation.separator.exponent",
+    //   "background": "var(bg)",
+    //   "foreground": "var(fg)",
+    // },
+    {
+      "scope": "punctuation.definition.numeric, punctuation.separator.ratio",
+      "background": "var(bg)",
+    },
+    // {
+    //   "scope": "keyword.operator",
+    //   "background": "var(operator_bg)",
+    //   "foreground": "var(operator_fg)",
+    // },
+    {
+      "scope": "storage",
+      "background": "var(storage_bg)",
+      "foreground": "var(storage_fg)",
+    },
+    {
+      // "scope": "variable.function, support.function, variable.other.member",
+      "scope": "variable.function, support.function",
+      "background": "var(var_bg)",
+      "foreground": "var(var_fg)",
+    },
+    {
+      "scope": "entity.name, variable.declaration, variable.other.constant.declaration, variable.other.member.declaration, variable.parameter",
+      "background": "var(var_bg)",
+      "foreground": "var(var_fg)",
+      "font_style": "italic",
+    },
+    {
+      "scope": "entity.name.function",
+      "background": "var(name_bg)",
+      "foreground": "var(name_fg)",
+    },
+    {
+      "scope": "entity.name.type, entity.name.class, entity.name.struct, entity.name.enum, entity.name.union, entity.name.trait, entity.name.interface, support.type, support.class, entity.other.inherited-class",
+      "background": "var(type_bg)",
+      "foreground": "var(type_fg)",
+    },
+    {
+      "scope": "punctuation.definition.tag",
+      "background": "var(xml_bracket_bg)",
+      "foreground": "var(xml_bracket_fg)",
+    },
+    {
+      "scope": "entity.other.attribute-name",
+      "background": "var(xml_attr_bg)",
+      "foreground": "var(xml_attr_fg)",
+    },
+    {
+      "scope": "entity.name.tag",
+      "background": "var(xml_tag_bg)",
+      "foreground": "var(xml_tag_fg)",
+      "font_style": "",
+    },
+    {
+      "scope": "meta.diff.range",
+      "background": "var(diff_range_bg)",
+      "foreground": "var(diff_range_fg)",
+    },
+    {
+      "scope": "markup.deleted, meta.diff.header.from-file",
+      "background": "var(deleted_bg)",
+      "foreground": "var(deleted_fg)",
+    },
+    {
+      "scope": "markup.inserted, meta.diff.header.to-file",
+      "background": "var(inserted_bg)",
+      "foreground": "var(inserted_fg)",
+    },
+    {
+      "scope": "markup.changed",
+      "background": "var(string_bg)",
+      "foreground": "var(string_fg)",
+    },
+    {
+      "scope": "markup.bold",
+      "font_style": "bold",
+    },
+    {
+      "scope": "markup.italic",
+      "font_style": "italic",
+    },
+    {
+      "scope": "markup.raw, markup.output, punctuation.definition.thematic-break",
+      "background": "var(raw_bg)",
+      "foreground": "var(raw_fg)",
+    },
+    {
+      "scope": "markup.link, markup.underline.link",
+      "background": "var(bg)",
+      "foreground": "var(var_fg)",
+    },
+
+    /* Syntax-specific */
+
+    // JSCustom
+    {
+      "scope": "source.js meta.object-literal.key",
+      "background": "var(string_bg)",
+      "foreground": "var(string_fg)",
+    },
+    {
+      "scope": "source.js support.constant.dom",
+      "background": "var(bg)",
+      "foreground": "var(fg)",
+    },
+    {
+      "scope": "source.js punctuation.definition.template-expression",
+      "background": "var(keyword_bg)",
+      "foreground": "var(keyword_fg)",
+    },
+    // Star imports and exports are operators, not constants
+    {
+      "scope": "meta.import.js constant.other.js, meta.export.js constant.other.js",
+      "background": "var(keyword_bg)",
+      "foreground": "var(keyword_fg)",
+    },
+    {
+      "scope": "source.js variable.type, source.js variable.other.class",
+      "background": "var(type_bg)",
+      "foreground": "var(type_fg)",
+    },
+    {
+      "scope": "source.js meta.binding.name, meta.export.js variable.other.readwrite.js - meta.block",
+      "background": "var(var_bg)",
+      "foreground": "var(var_fg)",
+      "font_style": "italic",
+    },
+  ]
+}
