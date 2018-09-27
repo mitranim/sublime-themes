@@ -80,7 +80,7 @@
     //   "foreground": "var(operator_fg)",
     // },
     {
-      "scope": "storage",
+      "scope": "storage, support.type",
       "background": "var(storage_bg)",
       "foreground": "var(storage_fg)",
     },
@@ -102,7 +102,7 @@
       "foreground": "var(name_fg)",
     },
     {
-      "scope": "entity.name.type, entity.name.class, entity.name.struct, entity.name.enum, entity.name.union, entity.name.trait, entity.name.interface, support.type, support.class, entity.other.inherited-class",
+      "scope": "entity.name.type, entity.name.class, entity.name.struct, entity.name.enum, entity.name.union, entity.name.trait, entity.name.interface, support.class, entity.other.inherited-class",
       "background": "var(type_bg)",
       "foreground": "var(type_fg)",
     },
