@@ -51,7 +51,7 @@
       "foreground": "var(constant_fg)",
     },
     {
-      "scope": "constant.numeric.octal",
+      "scope": "constant.numeric.octal, constant.numeric.integer.octal",
       "background": "var(bg)",
       "foreground": "magenta",
     },
