@@ -1,7 +1,4 @@
-import re
 from os import path
-from collections import OrderedDict
-import json
 import sublime
 import sublime_plugin
 
@@ -14,22 +11,18 @@ def build():
         rules = sublime.decode_value(file.read())
 
     with open(path.join(DIR, 'src/Cloud.json-scs')) as file:
-        cloud = OrderedDict(sublime.decode_value(file.read()))
+        cloud = sublime.decode_value(file.read())
         cloud.update(rules)
 
+    with open(path.join(DIR, 'Cloud.sublime-color-scheme'), mode='w') as file:
+        file.write(sublime.encode_value(cloud, True))
+
     with open(path.join(DIR, 'src/Nether.json-scs')) as file:
-        nether = OrderedDict(sublime.decode_value(file.read()))
+        nether = sublime.decode_value(file.read())
         nether.update(rules)
 
-    # Note: we encode with json rather than sublime.encode_value because it
-    # respects ordered dicts.
-
-    with open(path.join(DIR, 'Cloud.sublime-color-scheme'), mode='w') as file:
-        file.write(json.dumps(cloud, indent=2))
-
     with open(path.join(DIR, 'Nether.sublime-color-scheme'), mode='w') as file:
-        file.write(json.dumps(nether, indent=2))
-
+        file.write(sublime.encode_value(nether, True))
 
 
 class ColorSchemeListener(sublime_plugin.EventListener):
