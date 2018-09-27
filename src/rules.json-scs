@@ -61,6 +61,10 @@
       "foreground": "var(symbol_fg)",
     },
     {
+      "scope": "comment meta.annotation",
+      "font_style": "italic",
+    },
+    {
       "scope": "keyword, punctuation.accessor.dot",
       "background": "var(keyword_bg)",
       "foreground": "var(keyword_fg)",
