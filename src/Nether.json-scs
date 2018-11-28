@@ -21,7 +21,7 @@
     "keyword_bg": "var(bg)",
     "keyword_fg": "var(light_orange)",
     "operator_bg": "var(bg)",
-    "operator_fg": "var(fg)",
+    "operator_fg": "var(fg)", // TODO
     "storage_bg": "var(bg)",
     "storage_fg": "var(dark_cyan)",
     "constant_bg": "var(bg)",

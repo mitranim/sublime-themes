@@ -193,6 +193,7 @@
 	],
 	"variables":
 	{
+		"autumn": "hsl(20, 100%, 40%)",
 		"bg": "white",
 		"comment_bg": "var(bg)",
 		"comment_block_bg": "hsl(45, 100%, 98%)",
@@ -214,7 +215,7 @@
 		"keyword_bg": "var(bg)",
 		"keyword_fg": "hsl(86, 48%, 35%)",
 		"name_bg": "var(bg)",
-		"name_fg": "var(keyword_fg)",
+		"name_fg": "var(autumn)",
 		"operator_bg": "var(bg)",
 		"operator_fg": "hsl(232, 49%, 59%)",
 		"raw_bg": "var(bg)",
