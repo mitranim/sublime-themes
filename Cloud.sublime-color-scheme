@@ -22,6 +22,16 @@
 			"scope": "comment.documentation, comment.block.documentation"
 		},
 		{
+			"background": "var(comment_bg)",
+			"foreground": "var(comment_fg)",
+			"scope": "punctuation.section"
+		},
+		{
+			"background": "var(comment_bg)",
+			"foreground": "var(comment_fg)",
+			"scope": "punctuation.terminator"
+		},
+		{
 			"background": "var(illegal_bg)",
 			"foreground": "var(illegal_fg)",
 			"scope": "invalid.illegal"
@@ -49,7 +59,7 @@
 		{
 			"background": "var(constant_bg)",
 			"foreground": "var(constant_fg)",
-			"scope": "constant, variable.language, support.constant"
+			"scope": "constant, support.constant"
 		},
 		{
 			"background": "var(constant_bg)",
@@ -94,6 +104,11 @@
 			"font_style": "italic",
 			"foreground": "var(var_fg)",
 			"scope": "entity.name, variable.declaration, variable.other.constant.declaration, variable.other.member.declaration, variable.parameter"
+		},
+		{
+			"background": "var(comment_bg)",
+			"foreground": "var(comment_fg)",
+			"scope": "variable.language.blank"
 		},
 		{
 			"background": "var(name_bg)",
@@ -189,6 +204,41 @@
 			"font_style": "italic",
 			"foreground": "var(var_fg)",
 			"scope": "source.js meta.binding.name, meta.export.js variable.other.readwrite.js - meta.block"
+		},
+		{
+			"background": "var(constant_bg)",
+			"foreground": "var(constant_fg)",
+			"scope": "source.js variable.language.this, source.js variable.language.super, source.js variable.language.arguments"
+		},
+		{
+			"background": "var(comment_bg)",
+			"foreground": "var(comment_fg)",
+			"scope": "source.js punctuation.definition.interpolation"
+		},
+		{
+			"background": "var(var_bg)",
+			"foreground": "var(var_fg)",
+			"scope": "variable.register.goasm"
+		},
+		{
+			"background": "var(keyword_bg)",
+			"foreground": "var(keyword_fg)",
+			"scope": "punctuation.definition.numeric.goasm"
+		},
+		{
+			"background": "var(xml_attr_bg)",
+			"foreground": "var(xml_attr_fg)",
+			"scope": "entity.other.pseudo-class.css"
+		},
+		{
+			"background": "var(xml_tag_bg)",
+			"foreground": "var(xml_tag_fg)",
+			"scope": "entity.other.pseudo-element.css, entity.other.pseudo-element.css support.type"
+		},
+		{
+			"background": "var(operator_bg)",
+			"foreground": "var(operator_fg)",
+			"scope": "punctuation.separator.combinator.css"
 		}
 	],
 	"variables":

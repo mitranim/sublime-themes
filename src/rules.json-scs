@@ -10,11 +10,16 @@
       "background": "var(comment_block_bg)",
       "foreground": "var(comment_block_fg)",
     },
-    // {
-    //   "scope": "punctuation.section",
-    //   "background": "var(comment_bg)",
-    //   "foreground": "var(comment_fg)",
-    // },
+    {
+      "scope": "punctuation.section",
+      "background": "var(comment_bg)",
+      "foreground": "var(comment_fg)",
+    },
+    {
+      "scope": "punctuation.terminator",
+      "background": "var(comment_bg)",
+      "foreground": "var(comment_fg)",
+    },
     {
       "scope": "invalid.illegal",
       "background": "var(illegal_bg)",
@@ -41,7 +46,7 @@
       "font_style": "bold",
     },
     {
-      "scope": "constant, variable.language, support.constant",
+      "scope": "constant, support.constant",
       "background": "var(constant_bg)",
       "foreground": "var(constant_fg)",
     },
@@ -99,6 +104,11 @@
       "background": "var(var_bg)",
       "foreground": "var(var_fg)",
       "font_style": "italic",
+    },
+    {
+      "scope": "variable.language.blank",
+      "background": "var(comment_bg)",
+      "foreground": "var(comment_fg)",
     },
     {
       "scope": "entity.name.function",
@@ -199,6 +209,45 @@
       "background": "var(var_bg)",
       "foreground": "var(var_fg)",
       "font_style": "italic",
+    },
+    {
+      "scope": "source.js variable.language.this, source.js variable.language.super, source.js variable.language.arguments",
+      "background": "var(constant_bg)",
+      "foreground": "var(constant_fg)",
+    },
+    {
+      "scope": "source.js punctuation.definition.interpolation",
+      "background": "var(comment_bg)",
+      "foreground": "var(comment_fg)",
+    },
+
+    // Goasm
+    {
+      "scope": "variable.register.goasm",
+      "background": "var(var_bg)",
+      "foreground": "var(var_fg)",
+    },
+    {
+      "scope": "punctuation.definition.numeric.goasm",
+      "background": "var(keyword_bg)",
+      "foreground": "var(keyword_fg)",
+    },
+
+    // CSS
+    {
+      "scope": "entity.other.pseudo-class.css",
+      "background": "var(xml_attr_bg)",
+      "foreground": "var(xml_attr_fg)",
+    },
+    {
+      "scope": "entity.other.pseudo-element.css, entity.other.pseudo-element.css support.type",
+      "background": "var(xml_tag_bg)",
+      "foreground": "var(xml_tag_fg)",
+    },
+    {
+      "scope": "punctuation.separator.combinator.css",
+      "background": "var(operator_bg)",
+      "foreground": "var(operator_fg)",
     },
   ]
 }
