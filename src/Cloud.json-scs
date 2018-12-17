@@ -1,12 +1,11 @@
 {
   "variables": {
-    // "autumn": "hsl(20, 60%, 50%)",
     "autumn": "hsl(20, 100%, 40%)",
 
     "bg": "white",
     "fg": "black",
     "comment_bg": "var(bg)",
-    "comment_fg": "hsl(60, 20%, 60%)",
+    "comment_fg": "hsl(60, 10%, 60%)",
     "comment_block_bg": "hsl(45, 100%, 98%)",
     "comment_block_fg": "var(string_fg)",
     "keyword_bg": "var(bg)",

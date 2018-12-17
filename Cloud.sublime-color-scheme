@@ -248,7 +248,7 @@
 		"comment_bg": "var(bg)",
 		"comment_block_bg": "hsl(45, 100%, 98%)",
 		"comment_block_fg": "var(string_fg)",
-		"comment_fg": "hsl(60, 20%, 60%)",
+		"comment_fg": "hsl(60, 10%, 60%)",
 		"constant_bg": "hsl(245, 100%, 97%)",
 		"constant_fg": "hsl(259, 47%, 54%)",
 		"deleted_bg": "hsl(0, 100%, 93%)",
