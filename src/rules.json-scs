@@ -89,7 +89,7 @@
     //   "foreground": "var(operator_fg)",
     // },
     {
-      "scope": "storage, support.type",
+      "scope": "storage, support.type -entity.other.inherited-class -variable.function",
       "background": "var(storage_bg)",
       "foreground": "var(storage_fg)",
     },
@@ -165,7 +165,7 @@
       "font_style": "italic",
     },
     {
-      "scope": "markup.raw, markup.output, punctuation.definition.thematic-break",
+      "scope": "markup.raw - source, markup.output, punctuation.definition.thematic-break",
       "background": "var(raw_bg)",
       "foreground": "var(raw_fg)",
     },
@@ -175,9 +175,10 @@
       "foreground": "var(var_fg)",
     },
 
-    /* Syntax-specific */
+    /* Syntax-specific stuff below */
 
-    // JSCustom
+    /* JS Custom */
+
     {
       "scope": "source.js meta.object-literal.key",
       "background": "var(string_bg)",
@@ -201,8 +202,8 @@
     },
     {
       "scope": "source.js variable.type, source.js variable.other.class",
-      "background": "var(type_bg)",
-      "foreground": "var(type_fg)",
+      "background": "var(storage_bg)",
+      "foreground": "var(storage_fg)",
     },
     {
       "scope": "source.js meta.binding.name, meta.export.js variable.other.readwrite.js - meta.block",
@@ -220,8 +221,15 @@
       "background": "var(comment_bg)",
       "foreground": "var(comment_fg)",
     },
+    {
+      "scope": "source.js support.type.object",
+      "background": "var(bg)",
+      "foreground": "var(fg)",
+      "font_style": "italic",
+    },
 
-    // Goasm
+    /* Goasm */
+
     {
       "scope": "variable.register.goasm",
       "background": "var(var_bg)",
@@ -233,7 +241,8 @@
       "foreground": "var(keyword_fg)",
     },
 
-    // CSS
+    /* CSS */
+
     {
       "scope": "entity.other.pseudo-class.css",
       "background": "var(xml_attr_bg)",
@@ -248,6 +257,15 @@
       "scope": "punctuation.separator.combinator.css",
       "background": "var(operator_bg)",
       "foreground": "var(operator_fg)",
+    },
+
+    /* Markdown */
+
+    // Suppress the warning on non-terminated `; it's too frequent while typing
+    {
+      "scope": "markup.raw.inline.markdown invalid.illegal.non-terminated.raw.markdown",
+      "background": "var(bg)",
+      "foreground": "var(fg)",
     },
   ]
 }

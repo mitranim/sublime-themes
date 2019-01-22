@@ -92,7 +92,7 @@
 		{
 			"background": "var(storage_bg)",
 			"foreground": "var(storage_fg)",
-			"scope": "storage, support.type"
+			"scope": "storage, support.type -entity.other.inherited-class -variable.function"
 		},
 		{
 			"background": "var(var_bg)",
@@ -167,7 +167,7 @@
 		{
 			"background": "var(raw_bg)",
 			"foreground": "var(raw_fg)",
-			"scope": "markup.raw, markup.output, punctuation.definition.thematic-break"
+			"scope": "markup.raw - source, markup.output, punctuation.definition.thematic-break"
 		},
 		{
 			"background": "var(bg)",
@@ -195,8 +195,8 @@
 			"scope": "meta.import.js constant.other.js, meta.export.js constant.other.js"
 		},
 		{
-			"background": "var(type_bg)",
-			"foreground": "var(type_fg)",
+			"background": "var(storage_bg)",
+			"foreground": "var(storage_fg)",
 			"scope": "source.js variable.type, source.js variable.other.class"
 		},
 		{
@@ -214,6 +214,12 @@
 			"background": "var(comment_bg)",
 			"foreground": "var(comment_fg)",
 			"scope": "source.js punctuation.definition.interpolation"
+		},
+		{
+			"background": "var(bg)",
+			"font_style": "italic",
+			"foreground": "var(fg)",
+			"scope": "source.js support.type.object"
 		},
 		{
 			"background": "var(var_bg)",
@@ -239,6 +245,11 @@
 			"background": "var(operator_bg)",
 			"foreground": "var(operator_fg)",
 			"scope": "punctuation.separator.combinator.css"
+		},
+		{
+			"background": "var(bg)",
+			"foreground": "var(fg)",
+			"scope": "markup.raw.inline.markdown invalid.illegal.non-terminated.raw.markdown"
 		}
 	],
 	"variables":
@@ -248,7 +259,7 @@
 		"comment_bg": "var(bg)",
 		"comment_block_bg": "hsl(45, 100%, 98%)",
 		"comment_block_fg": "var(string_fg)",
-		"comment_fg": "hsl(60, 10%, 60%)",
+		"comment_fg": "hsl(60, 10%, 50%)",
 		"constant_bg": "hsl(245, 100%, 97%)",
 		"constant_fg": "hsl(259, 47%, 54%)",
 		"deleted_bg": "hsl(0, 100%, 93%)",

@@ -92,7 +92,7 @@
 		{
 			"background": "var(storage_bg)",
 			"foreground": "var(storage_fg)",
-			"scope": "storage, support.type"
+			"scope": "storage, support.type -entity.other.inherited-class -variable.function"
 		},
 		{
 			"background": "var(var_bg)",
@@ -167,7 +167,7 @@
 		{
 			"background": "var(raw_bg)",
 			"foreground": "var(raw_fg)",
-			"scope": "markup.raw, markup.output, punctuation.definition.thematic-break"
+			"scope": "markup.raw - source, markup.output, punctuation.definition.thematic-break"
 		},
 		{
 			"background": "var(bg)",
@@ -195,8 +195,8 @@
 			"scope": "meta.import.js constant.other.js, meta.export.js constant.other.js"
 		},
 		{
-			"background": "var(type_bg)",
-			"foreground": "var(type_fg)",
+			"background": "var(storage_bg)",
+			"foreground": "var(storage_fg)",
 			"scope": "source.js variable.type, source.js variable.other.class"
 		},
 		{
@@ -214,6 +214,12 @@
 			"background": "var(comment_bg)",
 			"foreground": "var(comment_fg)",
 			"scope": "source.js punctuation.definition.interpolation"
+		},
+		{
+			"background": "var(bg)",
+			"font_style": "italic",
+			"foreground": "var(fg)",
+			"scope": "source.js support.type.object"
 		},
 		{
 			"background": "var(var_bg)",
@@ -239,11 +245,16 @@
 			"background": "var(operator_bg)",
 			"foreground": "var(operator_fg)",
 			"scope": "punctuation.separator.combinator.css"
+		},
+		{
+			"background": "var(bg)",
+			"foreground": "var(fg)",
+			"scope": "markup.raw.inline.markdown invalid.illegal.non-terminated.raw.markdown"
 		}
 	],
 	"variables":
 	{
-		"bg": "hsl(200, 5%, 11%)",
+		"bg": "hsl(200, 5%, 10%)",
 		"bright_autumn": "hsl(32, 100%, 59%)",
 		"bright_gold": "hsl(80, 76%, 53%)",
 		"comment_bg": "var(bg)",
@@ -262,7 +273,7 @@
 		"deprecated_fg": "var(fg)",
 		"diff_range_bg": "var(bg)",
 		"diff_range_fg": "var(fg)",
-		"fg": "hsl(0, 0%, 90%)",
+		"fg": "white",
 		"illegal_bg": "red",
 		"illegal_fg": "black",
 		"inserted_bg": "var(bg)",

@@ -12,8 +12,9 @@
     "dark_cyan": "hsl(220, 50%, 70%)",
     "light_cyan": "hsl(190, 80%, 75%)",
 
-    "bg": "hsl(200, 5%, 11%)",
-    "fg": "hsl(0, 0%, 90%)",
+    "bg": "hsl(200, 5%, 10%)",
+    // "fg": "hsl(0, 0%, 90%)",
+    "fg": "white",
     "comment_bg": "var(bg)",
     "comment_fg": "hsl(60, 9%, 48%)",
     "comment_block_bg": "var(bg)",
