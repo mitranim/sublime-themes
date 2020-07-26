@@ -22,6 +22,10 @@ Use the built-in Adaptive theme to match the color scheme:
 
     Command Palette -> UI: Select Theme -> Adaptive
 
+## Modification
+
+`make.py` automatically rebuilds the themes on changes in `src`.
+
 ## License
 
 https://en.wikipedia.org/wiki/WTFPL
