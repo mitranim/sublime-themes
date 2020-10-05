@@ -92,12 +92,17 @@
 		{
 			"background": "var(storage_bg)",
 			"foreground": "var(storage_fg)",
-			"scope": "storage, support.type -entity.other.inherited-class -variable.function"
+			"scope": "storage, support.type -entity.other.inherited-class -variable.function, support.class"
 		},
 		{
 			"background": "var(var_bg)",
 			"foreground": "var(var_fg)",
 			"scope": "variable.function, support.function"
+		},
+		{
+			"background": "var(var_bg)",
+			"foreground": "var(var_fg)",
+			"scope": "variable.other.constant"
 		},
 		{
 			"background": "var(var_bg)",
@@ -118,7 +123,7 @@
 		{
 			"background": "var(type_bg)",
 			"foreground": "var(type_fg)",
-			"scope": "entity.name.type, entity.name.class, entity.name.struct, entity.name.enum, entity.name.union, entity.name.trait, entity.name.interface, support.class, entity.other.inherited-class"
+			"scope": "entity.name.type, entity.name.class, entity.name.struct, entity.name.enum, entity.name.union, entity.name.trait, entity.name.interface, entity.other.inherited-class"
 		},
 		{
 			"background": "var(xml_bracket_bg)",
@@ -250,6 +255,11 @@
 			"background": "var(bg)",
 			"foreground": "var(fg)",
 			"scope": "markup.raw.inline.markdown invalid.illegal.non-terminated.raw.markdown"
+		},
+		{
+			"background": "var(constant_bg)",
+			"foreground": "var(constant_fg)",
+			"scope": "constant.numeric.octal.mox"
 		}
 	],
 	"variables":
