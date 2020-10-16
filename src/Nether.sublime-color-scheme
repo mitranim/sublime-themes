@@ -4,7 +4,6 @@
     "light_autumn": "hsl(32, 70%, 80%)",
     "bright_gold": "hsl(80, 76%, 53%)",
     "dark_orange": "hsl(8, 97%, 65%)",
-    "light_orange": "hsl(10, 90%, 80%)",
     "dark_pink": "hsl(308, 45%, 59%)",
     "dark_red": "hsl(338, 95%, 56%)",
     "warm_pink": "hsl(334, 100%, 80%)",
@@ -13,14 +12,13 @@
     "light_cyan": "hsl(190, 80%, 75%)",
 
     "bg": "hsl(200, 5%, 10%)",
-    // "fg": "hsl(0, 0%, 90%)",
     "fg": "white",
     "comment_bg": "var(bg)",
     "comment_fg": "hsl(60, 9%, 48%)",
     "comment_block_bg": "var(bg)",
     "comment_block_fg": "var(string_fg)",
     "keyword_bg": "var(bg)",
-    "keyword_fg": "var(light_orange)",
+    "keyword_fg": "hsl(110, 90%, 80%)",
     "operator_bg": "var(bg)",
     "operator_fg": "var(fg)", // TODO
     "storage_bg": "var(bg)",
