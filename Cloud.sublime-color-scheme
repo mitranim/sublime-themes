@@ -83,7 +83,7 @@
 		{
 			"background": "var(keyword_bg)",
 			"foreground": "var(keyword_fg)",
-			"scope": "keyword, punctuation.accessor.dot"
+			"scope": "keyword, punctuation.accessor.dot, punctuation.separator"
 		},
 		{
 			"background": "var(bg)",

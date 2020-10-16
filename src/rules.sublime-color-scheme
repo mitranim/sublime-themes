@@ -70,25 +70,20 @@
       "font_style": "italic",
     },
     {
-      "scope": "keyword, punctuation.accessor.dot",
+      "scope": "keyword, punctuation.accessor.dot, punctuation.separator",
       "background": "var(keyword_bg)",
       "foreground": "var(keyword_fg)",
     },
-    // {
-    //   "scope": "punctuation.separator.decimal, punctuation.separator.exponent",
-    //   "background": "var(bg)",
-    //   "foreground": "var(fg)",
-    // },
     {
       "scope": "punctuation.definition.numeric, punctuation.separator.ratio",
       "background": "var(bg)",
     },
+    // Disabled because the colors are not implemented.
     // {
     //   "scope": "keyword.operator",
     //   "background": "var(operator_bg)",
     //   "foreground": "var(operator_fg)",
     // },
-
     // Note: `support.class` was tentatively changed from `type_bg` to `storage_bg`.
     {
       "scope": "storage, support.type -entity.other.inherited-class -variable.function, support.class",
@@ -276,6 +271,7 @@
     },
 
     /* Mox */
+
     // Octals don't need a warning color.
     {
       "scope": "constant.numeric.octal.mox",
