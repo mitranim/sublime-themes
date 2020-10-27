@@ -7,17 +7,17 @@ DIR = path.dirname(path.realpath(__file__))
 
 
 def build():
-    with open(path.join(DIR, 'src/rules.sublime-color-scheme')) as file:
+    with open(path.join(DIR, 'src/rules.json')) as file:
         rules = sublime.decode_value(file.read())
 
-    with open(path.join(DIR, 'src/Cloud.sublime-color-scheme')) as file:
+    with open(path.join(DIR, 'src/Cloud.json')) as file:
         cloud = sublime.decode_value(file.read())
         cloud.update(rules)
 
     with open(path.join(DIR, 'Cloud.sublime-color-scheme'), mode='w') as file:
         file.write(sublime.encode_value(cloud, True))
 
-    with open(path.join(DIR, 'src/Nether.sublime-color-scheme')) as file:
+    with open(path.join(DIR, 'src/Nether.json')) as file:
         nether = sublime.decode_value(file.read())
         nether.update(rules)
 
