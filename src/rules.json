@@ -70,7 +70,7 @@
       "font_style": "italic",
     },
     {
-      "scope": "keyword, punctuation.accessor.dot, punctuation.separator",
+      "scope": "keyword, punctuation.accessor, punctuation.separator",
       "background": "var(keyword_bg)",
       "foreground": "var(keyword_fg)",
     },

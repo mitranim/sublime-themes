@@ -1,33 +1,28 @@
-from os import path
 import sublime
 import sublime_plugin
+from os import path as pt
+import glob
 
-
-DIR = path.dirname(path.realpath(__file__))
-
+DIR = pt.dirname(pt.realpath(__file__))
+DIR_SRC = pt.join(DIR, 'src')
 
 def build():
-    with open(path.join(DIR, 'src/rules.json')) as file:
+    with open(pt.join(DIR_SRC, 'rules.json')) as file:
         rules = sublime.decode_value(file.read())
 
-    with open(path.join(DIR, 'src/Cloud.json')) as file:
-        cloud = sublime.decode_value(file.read())
-        cloud.update(rules)
+    for src_path in glob.iglob(pt.join(DIR_SRC, '*.json-color-scheme')):
+        with open(src_path) as src:
+            config = sublime.decode_value(src.read())
+            config.update(rules)
 
-    with open(path.join(DIR, 'Cloud.sublime-color-scheme'), mode='w') as file:
-        file.write(sublime.encode_value(cloud, True))
+        (name, _) = pt.splitext(pt.basename(src_path))
+        out_path = pt.join(DIR, name + '.sublime-color-scheme')
 
-    with open(path.join(DIR, 'src/Nether.json')) as file:
-        nether = sublime.decode_value(file.read())
-        nether.update(rules)
-
-    with open(path.join(DIR, 'Nether.sublime-color-scheme'), mode='w') as file:
-        file.write(sublime.encode_value(nether, True))
-
+        with open(out_path, mode='w') as out:
+            out.write(sublime.encode_value(config, pretty=True))
 
 class ColorSchemeListener(sublime_plugin.EventListener):
     def on_post_save_async(self, view):
-        pt = view.file_name()
-        rel = path.relpath(view.file_name(), DIR)
-        if rel.startswith('src/'):
+        is_src = view.file_name().startswith(DIR_SRC + pt.sep)
+        if is_src:
             build()
