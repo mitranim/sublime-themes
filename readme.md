@@ -4,13 +4,13 @@ Custom themes and color schemes for Sublime Text. Uses the new `.sublime-color-s
 
 ## Installation
 
-Clone or download the repo into Sublime's Packages folder. On MacOS, this is usually:
+Clone the repo and symlink it to your Sublime packages directory. Example for MacOS:
 
-    "/Users/<user>/Library/Application Support/Sublime Text 3/Packages"
+    git clone https://github.com/mitranim/sublime-themes.git
+    cd sublime-themes
+    ln -sf "$(pwd)" "$HOME/Library/Application Support/Sublime Text 3/Packages/"
 
-Reminder how to open the Packages folder:
-
-    menu -> Preferences -> Browse Packages
+To find the packages directory on your system, use Sublime Text menu → Preferences → Browse Packages.
 
 Activate:
 
