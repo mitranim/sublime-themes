@@ -28,4 +28,4 @@ Use the built-in Adaptive theme to match the color scheme:
 
 ## License
 
-https://en.wikipedia.org/wiki/WTFPL
+https://unlicense.org
