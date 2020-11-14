@@ -175,51 +175,14 @@
 			"scope": "markup.link, markup.underline.link"
 		},
 		{
-			"background": "var(string_bg)",
-			"foreground": "var(string_fg)",
-			"scope": "source.js meta.object-literal.key"
-		},
-		{
-			"background": "var(bg)",
-			"foreground": "var(fg)",
-			"scope": "source.js support.constant.dom"
-		},
-		{
-			"background": "var(keyword_bg)",
-			"foreground": "var(keyword_fg)",
-			"scope": "source.js punctuation.definition.template-expression"
-		},
-		{
 			"background": "var(keyword_bg)",
 			"foreground": "var(keyword_fg)",
 			"scope": "meta.import.js constant.other.js, meta.export.js constant.other.js"
 		},
 		{
-			"background": "var(storage_bg)",
-			"foreground": "var(storage_fg)",
-			"scope": "source.js variable.type, source.js variable.other.class"
-		},
-		{
-			"background": "var(var_bg)",
-			"font_style": "italic",
-			"foreground": "var(var_fg)",
-			"scope": "source.js meta.binding.name, meta.export.js variable.other.readwrite.js - meta.block"
-		},
-		{
-			"background": "var(constant_bg)",
-			"foreground": "var(constant_fg)",
-			"scope": "source.js variable.language.this, source.js variable.language.super, source.js variable.language.arguments"
-		},
-		{
 			"background": "var(comment_bg)",
 			"foreground": "var(comment_fg)",
-			"scope": "source.js punctuation.definition.interpolation"
-		},
-		{
-			"background": "var(bg)",
-			"font_style": "italic",
-			"foreground": "var(fg)",
-			"scope": "source.js support.type.object"
+			"scope": "source.jsx punctuation.definition.interpolation"
 		},
 		{
 			"background": "var(var_bg)",
