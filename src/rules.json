@@ -11,7 +11,7 @@
       "foreground": "var(comment_block_fg)",
     },
     {
-      "scope": "punctuation.section",
+      "scope": "punctuation.section, punctuation.definition.group",
       "background": "var(comment_bg)",
       "foreground": "var(comment_fg)",
     },
@@ -65,7 +65,7 @@
       "font_style": "italic",
     },
     {
-      "scope": "keyword - keyword.declaration, punctuation.accessor, punctuation.separator",
+      "scope": "keyword, punctuation.accessor, punctuation.separator, storage.type.function, storage.type.class",
       "background": "var(keyword_bg)",
       "foreground": "var(keyword_fg)",
     },
@@ -81,7 +81,7 @@
     // },
     // Note: `support.class` was tentatively changed from `type_bg` to `storage_bg`.
     {
-      "scope": "storage, support.type -entity.other.inherited-class -variable.function, support.class",
+      "scope": "storage, support.type -entity.other.inherited-class -variable.function, support.class, variable.type",
       "background": "var(storage_bg)",
       "foreground": "var(storage_fg)",
     },
@@ -90,13 +90,13 @@
       "background": "var(var_bg)",
       "foreground": "var(var_fg)",
     },
+    // {
+    //   "scope": "variable.other.constant",
+    //   "background": "var(var_bg)",
+    //   "foreground": "var(var_fg)",
+    // },
     {
-      "scope": "variable.other.constant",
-      "background": "var(var_bg)",
-      "foreground": "var(var_fg)",
-    },
-    {
-      "scope": "entity.name, variable.declaration, variable.other.constant.declaration, variable.other.member.declaration, variable.parameter",
+      "scope": "entity.name, variable.declaration, variable.other.constant.declaration, variable.other.member.declaration, variable.parameter, meta.binding.name variable.other",
       "background": "var(var_bg)",
       "foreground": "var(var_fg)",
       "font_style": "italic",
@@ -234,6 +234,16 @@
       "scope": "constant.numeric.octal.mox",
       "background": "var(constant_bg)",
       "foreground": "var(constant_fg)",
-    }
+    },
+
+    /* Go */
+
+    // This override should be removed after updating the syntax to the new
+    // convention of `keyword.declaration` for declaration keywords.
+    {
+      "scope": "storage.type.keyword.function",
+      "background": "var(keyword_bg)",
+      "foreground": "var(keyword_fg)",
+    },
   ]
 }

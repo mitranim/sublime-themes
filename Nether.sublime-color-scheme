@@ -24,7 +24,7 @@
 		{
 			"background": "var(comment_bg)",
 			"foreground": "var(comment_fg)",
-			"scope": "punctuation.section"
+			"scope": "punctuation.section, punctuation.definition.group"
 		},
 		{
 			"background": "var(comment_bg)",
@@ -78,7 +78,7 @@
 		{
 			"background": "var(keyword_bg)",
 			"foreground": "var(keyword_fg)",
-			"scope": "keyword - keyword.declaration, punctuation.accessor, punctuation.separator"
+			"scope": "keyword, punctuation.accessor, punctuation.separator, storage.type.function, storage.type.class"
 		},
 		{
 			"background": "var(bg)",
@@ -87,7 +87,7 @@
 		{
 			"background": "var(storage_bg)",
 			"foreground": "var(storage_fg)",
-			"scope": "storage, support.type -entity.other.inherited-class -variable.function, support.class"
+			"scope": "storage, support.type -entity.other.inherited-class -variable.function, support.class, variable.type"
 		},
 		{
 			"background": "var(var_bg)",
@@ -96,14 +96,9 @@
 		},
 		{
 			"background": "var(var_bg)",
-			"foreground": "var(var_fg)",
-			"scope": "variable.other.constant"
-		},
-		{
-			"background": "var(var_bg)",
 			"font_style": "italic",
 			"foreground": "var(var_fg)",
-			"scope": "entity.name, variable.declaration, variable.other.constant.declaration, variable.other.member.declaration, variable.parameter"
+			"scope": "entity.name, variable.declaration, variable.other.constant.declaration, variable.other.member.declaration, variable.parameter, meta.binding.name variable.other"
 		},
 		{
 			"background": "var(comment_bg)",
@@ -218,6 +213,11 @@
 			"background": "var(constant_bg)",
 			"foreground": "var(constant_fg)",
 			"scope": "constant.numeric.octal.mox"
+		},
+		{
+			"background": "var(keyword_bg)",
+			"foreground": "var(keyword_fg)",
+			"scope": "storage.type.keyword.function"
 		}
 	],
 	"variables":

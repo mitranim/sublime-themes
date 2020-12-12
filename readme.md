@@ -1,6 +1,6 @@
 ## Overview
 
-Custom themes and color schemes for Sublime Text. Uses the new `.sublime-color-scheme` format and requires **at least version 3149** of Sublime.
+Custom color schemes for Sublime Text. Made for the Adaptive theme.
 
 ## Installation
 
