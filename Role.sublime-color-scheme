@@ -3,18 +3,14 @@
   "variables": {
     "bg": "hsl(200, 5%, 10%)",
     "fg": "white",
-    "comment_bg": "var(bg)",
     "comment_fg": "hsl(60, 10%, 50%)",
-    "keyword_bg": "var(bg)",
     "keyword_fg": "hsl(120, 80%, 80%)",
-    "declaration_bg": "var(bg)",
     "declaration_fg": "hsl(220, 75%, 90%)",
-    "modifier_bg": "var(bg)",
     "modifier_fg": "hsl(240, 70%, 80%)",
-    "quoted_bg": "var(bg)",
-    "quoted_fg": "hsl(60, 80%, 80%)",
-    "illegal_bg": "var(bg)",
+    "quoted_bg": "hsla(60, 100%, 80%, 0.05)",
+    "quoted_fg": "hsl(60, 80%, 90%)",
     "illegal_fg": "hsl(0, 100%, 60%)",
+    "raw_bg": "color(var(fg) alpha(0.05))",
     "invisible": "hsl(0, 0%, 20%)",
     "selection": "hsl(0, 0%, 30%)",
   },
@@ -30,38 +26,37 @@
   "rules": [
     {
       "scope": "comment, comment punctuation, comment punctuation.definition, punctuation.section, punctuation.definition.interpolation, punctuation.definition.group, variable.language.blank",
-      "background": "var(comment_bg)",
       "foreground": "var(comment_fg)",
     },
     {
       "scope": "entity.name - entity.name.tag, variable.parameter, variable.declaration, variable.other.constant.declaration, meta.binding variable.other",
-      "background": "var(declaration_bg)",
       "foreground": "var(declaration_fg)",
       "font_style": "italic",
     },
     {
-      "scope": "keyword, punctuation, variable.function, storage.type.keyword, storage.modifier, entity.name.tag",
-      "background": "var(keyword_bg)",
+      "scope": "keyword, punctuation, variable.function, storage.type.keyword, storage.modifier, entity.name.tag, string constant.other.placeholder",
       "foreground": "var(keyword_fg)",
     },
     {
       "scope": "storage, entity.other.inherited-class, punctuation.definition",
-      "background": "var(modifier_bg)",
       "foreground": "var(modifier_fg)",
     },
     {
       "scope": "string - punctuation.definition.string",
-      "background": "var(quoted_bg)",
+      // "background": "var(quoted_bg)",
       "foreground": "var(quoted_fg)",
     },
     {
       "scope": "invalid.illegal, invalid.deprecated",
-      "background": "var(illegal_bg)",
       "foreground": "var(illegal_fg)",
     },
     {
       "scope": "constant.character.escape",
       "font_style": "bold",
+    },
+    {
+      "scope": "markup.raw - punctuation.definition.raw",
+      "background": "var(raw_bg)",
     },
 
     /* Overrides */
@@ -69,34 +64,32 @@
     // Avoid forward fill. Must be one simple selector.
     {
       "scope": "keyword.declaration",
-      "background": "var(keyword_bg)",
       "foreground": "var(keyword_fg)",
     },
     {
       "scope": "source.rust support.function, source.rust support.macro",
-      "background": "var(keyword_bg)",
       "foreground": "var(keyword_fg)",
     },
     {
       "scope": "source.scss entity.other.attribute-name - meta.at-rule, source.scss entity.name.tag - meta.at-rule, source.scss entity.other.animation-name",
-      "background": "var(declaration_bg)",
       "foreground": "var(declaration_fg)",
     },
     {
       "scope": "meta.import.js variable.other",
-      "background": "var(declaration_bg)",
       "foreground": "var(declaration_fg)",
     },
     {
       "scope": "meta.import.js constant.other",
-      "background": "var(keyword_bg)",
       "foreground": "var(keyword_fg)",
     },
     {
       "scope": "source.go variable.other.member.declaration",
-      "background": "var(declaration_bg)",
       "foreground": "var(declaration_fg)",
       "font_style": "italic",
+    },
+    {
+      "scope": "source.shell support.function",
+      "foreground": "var(keyword_fg)",
     },
   ],
 }
