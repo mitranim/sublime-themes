@@ -249,7 +249,7 @@
 		"keyword_bg": "var(bg)",
 		"keyword_fg": "hsl(110, 90%, 80%)",
 		"light_autumn": "hsl(32, 70%, 80%)",
-		"light_cyan": "hsl(190, 80%, 75%)",
+		"light_cyan": "hsl(220, 75%, 90%)",
 		"name_bg": "var(bg)",
 		"name_fg": "var(bright_autumn)",
 		"operator_bg": "var(bg)",

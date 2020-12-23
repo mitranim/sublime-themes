@@ -9,7 +9,7 @@
     "warm_pink": "hsl(334, 100%, 80%)",
     "soft_yellow": "hsl(44, 61%, 78%)",
     "dark_cyan": "hsl(220, 50%, 70%)",
-    "light_cyan": "hsl(190, 80%, 75%)",
+    "light_cyan": "hsl(220, 75%, 90%)",
 
     "bg": "hsl(200, 5%, 10%)",
     "fg": "white",
