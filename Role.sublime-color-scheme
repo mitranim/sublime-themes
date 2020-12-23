@@ -29,7 +29,7 @@
       "foreground": "var(comment_fg)",
     },
     {
-      "scope": "entity.name - entity.name.tag, variable.parameter, variable.declaration, variable.other.constant.declaration, meta.binding variable.other",
+      "scope": "entity.name - entity.name.tag, variable.parameter, variable.declaration, variable.other.constant.declaration, meta.binding variable.other, variable.other.member.declaration",
       "foreground": "var(declaration_fg)",
       "font_style": "italic",
     },
@@ -81,11 +81,6 @@
     {
       "scope": "meta.import.js constant.other",
       "foreground": "var(keyword_fg)",
-    },
-    {
-      "scope": "source.go variable.other.member.declaration",
-      "foreground": "var(declaration_fg)",
-      "font_style": "italic",
     },
     {
       "scope": "source.shell support.function",
