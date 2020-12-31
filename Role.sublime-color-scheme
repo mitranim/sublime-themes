@@ -33,7 +33,7 @@
       "font_style": "italic",
     },
     {
-      "scope": "keyword, punctuation, variable.function, storage.type.keyword, storage.modifier, entity.name.tag, string constant.other.placeholder",
+      "scope": "keyword, punctuation, variable.function, storage.type.keyword, entity.name.tag, string constant.other.placeholder",
       "foreground": "var(action_fg)",
     },
     {
