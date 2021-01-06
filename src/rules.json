@@ -102,7 +102,7 @@
       "font_style": "italic",
     },
     {
-      "scope": "variable.language.blank",
+      "scope": "variable.language.blank, variable.language.anonymous",
       "background": "var(comment_bg)",
       "foreground": "var(comment_fg)",
     },

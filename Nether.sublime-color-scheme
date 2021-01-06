@@ -103,7 +103,7 @@
 		{
 			"background": "var(comment_bg)",
 			"foreground": "var(comment_fg)",
-			"scope": "variable.language.blank"
+			"scope": "variable.language.blank, variable.language.anonymous"
 		},
 		{
 			"background": "var(name_bg)",

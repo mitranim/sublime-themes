@@ -7,7 +7,7 @@
     "action_fg": "hsl(120, 80%, 80%)",
     "declaration_fg": "hsl(220, 75%, 90%)",
     "modifier_fg": "hsl(240, 70%, 80%)",
-    "literal_fg": "hsl(60, 80%, 90%)",
+    "literal_fg": "hsl(60, 80%, 90%)", // TODO: too similar to "action".
     "illegal_fg": "hsl(0, 100%, 60%)",
     "raw_bg": "color(var(fg) alpha(0.05))",
     "invisible": "hsl(0, 0%, 20%)",
@@ -24,7 +24,7 @@
   },
   "rules": [
     {
-      "scope": "comment, comment punctuation, comment punctuation.definition, punctuation.section, punctuation.definition.interpolation, punctuation.definition.group, variable.language.blank",
+      "scope": "comment, comment punctuation, comment punctuation.definition, punctuation.section, punctuation.definition.interpolation, punctuation.definition.group, variable.language.blank, variable.language.anonymous",
       "foreground": "var(comment_fg)",
     },
     {
@@ -115,6 +115,10 @@
     {
       "scope": "source.shell support.function",
       "foreground": "var(action_fg)",
+    },
+    {
+      "scope": "source.haskell support.type, source.haskell support.class, source.haskell support.constant",
+      "foreground": "var(modifier_fg)",
     },
   ],
 }
