@@ -7,9 +7,7 @@
     "action_fg": "hsl(120, 80%, 80%)",
     "declaration_fg": "hsl(220, 75%, 90%)",
     "modifier_fg": "hsl(240, 70%, 80%)",
-    "text_fg": "hsl(60, 80%, 90%)", // TODO: too similar to "action".
     "raw_bg": "color(var(fg) alpha(0.04))",
-    "constant_fg": "hsl(280, 100%, 75%)", // TODO: too similar to "modifier".
     "illegal_fg": "hsl(0, 100%, 60%)",
     "invisible": "hsl(0, 0%, 20%)",
     "selection": "hsl(0, 0%, 30%)",
@@ -25,7 +23,6 @@
   },
   "rules": [
     {
-      // "scope": "comment, comment punctuation, comment punctuation.definition",
       "scope": "comment",
       "foreground": "var(comment_fg)",
       "background": "var(raw_bg)",
@@ -48,9 +45,7 @@
       "foreground": "var(modifier_fg)",
     },
     {
-      // "scope": "string - punctuation.definition.string",
       "scope": "string",
-      // "foreground": "var(text_fg)",
       "background": "var(raw_bg)",
     },
     {
@@ -61,28 +56,19 @@
       "scope": "constant.character.escape",
       "font_style": "bold",
     },
-    // // Should be enabled only during syntax development. Needs a more
-    // // distinct color; currently too similar to "modifier".
-    // {
-    //   "scope": "constant",
-    //   "foreground": "var(constant_fg)",
-    // },
 
     /* Markup */
 
     {
-      // "scope": "markup.raw - punctuation.definition.raw",
       "scope": "markup.raw",
       "background": "var(raw_bg)",
     },
     {
       "scope": "meta.link.inline.description",
-      // "foreground": "var(text_fg)",
       "background": "var(raw_bg)",
     },
     {
       "scope": "markup.underline.link",
-      // "foreground": "var(text_fg)",
       "background": "var(raw_bg)",
     },
     {
@@ -98,7 +84,6 @@
       // a struct field in a struct literal. If we ever allocate a color for
       // that, this rule should use it.
       "scope": "text constant.other.language-name",
-      // "foreground": "var(text_fg)",
       "background": "var(raw_bg)",
     },
 
