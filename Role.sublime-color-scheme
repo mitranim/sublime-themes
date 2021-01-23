@@ -3,13 +3,14 @@
   "variables": {
     "bg": "hsl(200, 5%, 10%)",
     "fg": "white",
-    "comment_fg": "hsl(60, 10%, 50%)",
+    "comment_fg": "hsl(60, 10%, 60%)",
     "action_fg": "hsl(120, 80%, 80%)",
     "declaration_fg": "hsl(220, 75%, 90%)",
     "modifier_fg": "hsl(240, 70%, 80%)",
-    "literal_fg": "hsl(60, 80%, 90%)", // TODO: too similar to "action".
+    "text_fg": "hsl(60, 80%, 90%)", // TODO: too similar to "action".
+    "raw_bg": "color(var(fg) alpha(0.04))",
+    "constant_fg": "hsl(280, 100%, 75%)", // TODO: too similar to "modifier".
     "illegal_fg": "hsl(0, 100%, 60%)",
-    "raw_bg": "color(var(fg) alpha(0.05))",
     "invisible": "hsl(0, 0%, 20%)",
     "selection": "hsl(0, 0%, 30%)",
   },
@@ -24,11 +25,17 @@
   },
   "rules": [
     {
-      "scope": "comment, comment punctuation, comment punctuation.definition, punctuation.section, punctuation.definition.interpolation, punctuation.definition.group, variable.language.blank, variable.language.anonymous",
+      // "scope": "comment, comment punctuation, comment punctuation.definition",
+      "scope": "comment",
+      "foreground": "var(comment_fg)",
+      "background": "var(raw_bg)",
+    },
+    {
+      "scope": "punctuation.section, punctuation.definition.interpolation, punctuation.definition.group, variable.language.blank, variable.language.anonymous",
       "foreground": "var(comment_fg)",
     },
     {
-      "scope": "entity.name - entity.name.tag, variable.parameter, variable.declaration, variable.other.constant.declaration, meta.binding variable.other, variable.other.member.declaration",
+      "scope": "entity.name - entity.name.tag, variable.parameter, variable.declaration, variable.other.constant.declaration, meta.declaration variable.other,  meta.binding variable.other, variable.other.member.declaration",
       "foreground": "var(declaration_fg)",
       "font_style": "italic",
     },
@@ -41,8 +48,10 @@
       "foreground": "var(modifier_fg)",
     },
     {
-      "scope": "string - punctuation.definition.string",
-      "foreground": "var(literal_fg)",
+      // "scope": "string - punctuation.definition.string",
+      "scope": "string",
+      // "foreground": "var(text_fg)",
+      "background": "var(raw_bg)",
     },
     {
       "scope": "invalid.illegal, invalid.deprecated",
@@ -52,20 +61,29 @@
       "scope": "constant.character.escape",
       "font_style": "bold",
     },
+    // // Should be enabled only during syntax development. Needs a more
+    // // distinct color; currently too similar to "modifier".
+    // {
+    //   "scope": "constant",
+    //   "foreground": "var(constant_fg)",
+    // },
 
     /* Markup */
 
     {
-      "scope": "markup.raw - punctuation.definition.raw",
+      // "scope": "markup.raw - punctuation.definition.raw",
+      "scope": "markup.raw",
       "background": "var(raw_bg)",
     },
     {
       "scope": "meta.link.inline.description",
-      "foreground": "var(literal_fg)",
+      // "foreground": "var(text_fg)",
+      "background": "var(raw_bg)",
     },
     {
       "scope": "markup.underline.link",
-      "foreground": "var(literal_fg)",
+      // "foreground": "var(text_fg)",
+      "background": "var(raw_bg)",
     },
     {
       "scope": "markup.italic - punctuation.definition.italic",
@@ -80,7 +98,8 @@
       // a struct field in a struct literal. If we ever allocate a color for
       // that, this rule should use it.
       "scope": "text constant.other.language-name",
-      "foreground": "var(literal_fg)",
+      // "foreground": "var(text_fg)",
+      "background": "var(raw_bg)",
     },
 
     /* Overrides and special cases */
