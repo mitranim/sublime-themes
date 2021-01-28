@@ -1,4 +1,6 @@
 {
+  "rules": "rules-legacy.json",
+
   "variables": {
     "bright_autumn": "hsl(32, 100%, 59%)",
     "light_autumn": "hsl(32, 70%, 80%)",

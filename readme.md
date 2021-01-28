@@ -1,6 +1,6 @@
 ## Overview
 
-Custom color schemes for Sublime Text. Made for the Adaptive theme.
+Custom color schemes for Sublime Text. Dark and light variants. Made for the Adaptive theme.
 
 ## Installation
 
@@ -14,9 +14,10 @@ To find the packages directory on your system, use Sublime Text menu → Prefere
 
 Activate:
 
-    Command Palette -> UI: Select Color Scheme -> Cloud
-    # or
+    Command Palette -> UI: Select Color Scheme -> Role-Dark
+    Command Palette -> UI: Select Color Scheme -> Role-Light
     Command Palette -> UI: Select Color Scheme -> Nether
+    Command Palette -> UI: Select Color Scheme -> Cloud
 
 Use the built-in Adaptive theme to match the color scheme:
 

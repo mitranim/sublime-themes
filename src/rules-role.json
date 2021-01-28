@@ -1,17 +1,4 @@
-// Experimental scheme with fewer roles and colors. Work in progress.
 {
-  "variables": {
-    "bg": "hsl(200, 5%, 10%)",
-    "fg": "white",
-    "comment_fg": "hsl(60, 10%, 60%)",
-    "action_fg": "hsl(120, 80%, 80%)",
-    "declaration_fg": "hsl(220, 75%, 90%)",
-    "modifier_fg": "hsl(240, 70%, 80%)",
-    "raw_bg": "color(var(fg) alpha(0.04))",
-    "illegal_fg": "hsl(0, 100%, 60%)",
-    "invisible": "hsl(0, 0%, 20%)",
-    "selection": "hsl(0, 0%, 30%)",
-  },
   "globals": {
     "background": "var(bg)",
     "caret": "var(fg)",
@@ -37,7 +24,7 @@
       "font_style": "italic",
     },
     {
-      "scope": "keyword, punctuation, variable.function, storage.type.keyword, entity.name.tag, string constant.other.placeholder",
+      "scope": "keyword, punctuation, variable.function, entity.name.tag, string constant.other.placeholder",
       "foreground": "var(action_fg)",
     },
     {

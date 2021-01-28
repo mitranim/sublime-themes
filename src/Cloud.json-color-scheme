@@ -1,4 +1,6 @@
 {
+  "rules": "rules-legacy.json",
+
   "variables": {
     "autumn": "hsl(20, 100%, 40%)",
 

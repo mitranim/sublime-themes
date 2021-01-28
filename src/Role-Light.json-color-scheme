@@ -1,0 +1,15 @@
+{
+  "rules": "rules-role.json",
+  "variables": {
+    "bg":             "white",
+    "fg":             "black",
+    "comment_fg":     "hsl(60, 10%, 50%)",
+    "action_fg":      "hsl(120, 80%, 30%)",
+    "declaration_fg": "hsl(220, 75%, 40%)",
+    "modifier_fg":    "hsl(240, 70%, 30%)",
+    "raw_bg":         "color(var(fg) alpha(0.05))",
+    "illegal_fg":     "hsl(0, 100%, 50%)",
+    "invisible":      "hsl(0, 0%, 70%)",
+    "selection":      "hsl(200, 80%, 90%)",
+  },
+}

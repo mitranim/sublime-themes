@@ -1,0 +1,120 @@
+{
+	"globals":
+	{
+		"background": "var(bg)",
+		"caret": "var(fg)",
+		"foreground": "var(fg)",
+		"invisibles": "var(invisible)",
+		"line_highlight": "var(selection)",
+		"selection": "var(selection)",
+		"selection_border": "var(bg)"
+	},
+	"rules":
+	[
+		{
+			"background": "var(raw_bg)",
+			"foreground": "var(comment_fg)",
+			"scope": "comment"
+		},
+		{
+			"foreground": "var(comment_fg)",
+			"scope": "punctuation.section, punctuation.definition.interpolation, punctuation.definition.group, variable.language.blank, variable.language.anonymous"
+		},
+		{
+			"font_style": "italic",
+			"foreground": "var(declaration_fg)",
+			"scope": "entity.name - entity.name.tag, variable.parameter, variable.declaration, variable.other.constant.declaration, meta.declaration variable.other,  meta.binding variable.other, variable.other.member.declaration"
+		},
+		{
+			"foreground": "var(action_fg)",
+			"scope": "keyword, punctuation, variable.function, entity.name.tag, string constant.other.placeholder"
+		},
+		{
+			"foreground": "var(modifier_fg)",
+			"scope": "storage, entity.other.inherited-class, punctuation.definition"
+		},
+		{
+			"background": "var(raw_bg)",
+			"scope": "string"
+		},
+		{
+			"foreground": "var(illegal_fg)",
+			"scope": "invalid.illegal, invalid.deprecated"
+		},
+		{
+			"font_style": "bold",
+			"scope": "constant.character.escape"
+		},
+		{
+			"background": "var(raw_bg)",
+			"scope": "markup.raw"
+		},
+		{
+			"background": "var(raw_bg)",
+			"scope": "meta.link.inline.description"
+		},
+		{
+			"background": "var(raw_bg)",
+			"scope": "markup.underline.link"
+		},
+		{
+			"font_style": "italic",
+			"scope": "markup.italic - punctuation.definition.italic"
+		},
+		{
+			"font_style": "bold",
+			"scope": "markup.bold - punctuation.definition.bold"
+		},
+		{
+			"background": "var(raw_bg)",
+			"scope": "text constant.other.language-name"
+		},
+		{
+			"foreground": "var(action_fg)",
+			"scope": "keyword.declaration"
+		},
+		{
+			"foreground": "var(action_fg)",
+			"scope": "source.rust support.function, source.rust support.macro"
+		},
+		{
+			"font_style": "italic",
+			"foreground": "var(declaration_fg)",
+			"scope": "source.scss entity.other.attribute-name - meta.at-rule, source.scss entity.name.tag - meta.at-rule, source.scss entity.other.animation-name"
+		},
+		{
+			"font_style": "italic",
+			"foreground": "var(declaration_fg)",
+			"scope": "meta.import.js variable.other"
+		},
+		{
+			"foreground": "var(action_fg)",
+			"scope": "meta.import.js constant.other"
+		},
+		{
+			"foreground": "var(action_fg)",
+			"scope": "storage.type.class.js"
+		},
+		{
+			"foreground": "var(action_fg)",
+			"scope": "source.shell support.function"
+		},
+		{
+			"foreground": "var(modifier_fg)",
+			"scope": "source.haskell support.type, source.haskell support.class, source.haskell support.constant"
+		}
+	],
+	"variables":
+	{
+		"action_fg": "hsl(120, 80%, 80%)",
+		"bg": "hsl(200, 5%, 10%)",
+		"comment_fg": "hsl(60, 10%, 60%)",
+		"declaration_fg": "hsl(220, 75%, 90%)",
+		"fg": "white",
+		"illegal_fg": "hsl(0, 100%, 60%)",
+		"invisible": "hsl(0, 0%, 20%)",
+		"modifier_fg": "hsl(240, 70%, 80%)",
+		"raw_bg": "color(var(fg) alpha(0.04))",
+		"selection": "hsl(0, 0%, 30%)"
+	}
+}
