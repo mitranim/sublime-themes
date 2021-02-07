@@ -1,5 +1,5 @@
 {
-  "rules": "rules-role.json",
+  "rules": "rules-role.json-color-scheme-rules",
   "variables": {
     "bg":             "hsl(200, 5%, 10%)",
     "fg":             "white",

@@ -1,5 +1,5 @@
 {
-  "rules": "rules-legacy.json",
+  "rules": "rules-legacy.json-color-scheme-rules",
 
   "variables": {
     "bright_autumn": "hsl(32, 100%, 59%)",
