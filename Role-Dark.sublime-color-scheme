@@ -18,7 +18,7 @@
 		},
 		{
 			"foreground": "var(comment_fg)",
-			"scope": "punctuation.section, punctuation.definition.interpolation, punctuation.definition.group, variable.language.blank, variable.language.anonymous"
+			"scope": "punctuation.section, punctuation.definition.interpolation, punctuation.definition.group, punctuation.separator, punctuation.terminator, variable.language.blank, variable.language.anonymous"
 		},
 		{
 			"font_style": "italic",
@@ -59,11 +59,15 @@
 		},
 		{
 			"font_style": "italic",
-			"scope": "markup.italic - punctuation.definition.italic"
+			"scope": "markup.italic - punctuation.definition"
 		},
 		{
 			"font_style": "bold",
-			"scope": "markup.bold - punctuation.definition.bold"
+			"scope": "markup.bold - punctuation.definition"
+		},
+		{
+			"font_style": "bold italic",
+			"scope": "markup.bold markup.italic - punctuation.definition, markup.italic markup.bold - punctuation.definition"
 		},
 		{
 			"background": "var(raw_bg)",
@@ -89,11 +93,7 @@
 		},
 		{
 			"foreground": "var(action_fg)",
-			"scope": "meta.import.js constant.other"
-		},
-		{
-			"foreground": "var(action_fg)",
-			"scope": "storage.type.class.js"
+			"scope": "meta.import.js constant.other, storage.type.class.js, storage.modifier.extends.js"
 		},
 		{
 			"foreground": "var(action_fg)",

@@ -15,7 +15,7 @@
       "background": "var(raw_bg)",
     },
     {
-      "scope": "punctuation.section, punctuation.definition.interpolation, punctuation.definition.group, variable.language.blank, variable.language.anonymous",
+      "scope": "punctuation.section, punctuation.definition.interpolation, punctuation.definition.group, punctuation.separator, punctuation.terminator, variable.language.blank, variable.language.anonymous",
       "foreground": "var(comment_fg)",
     },
     {
@@ -59,12 +59,16 @@
       "background": "var(raw_bg)",
     },
     {
-      "scope": "markup.italic - punctuation.definition.italic",
+      "scope": "markup.italic - punctuation.definition",
       "font_style": "italic",
     },
     {
-      "scope": "markup.bold - punctuation.definition.bold",
+      "scope": "markup.bold - punctuation.definition",
       "font_style": "bold",
+    },
+    {
+      "scope": "markup.bold markup.italic - punctuation.definition, markup.italic markup.bold - punctuation.definition",
+      "font_style": "bold italic",
     },
     {
       // Semantically, this could be considered a "label" in the vein similar to
@@ -96,11 +100,7 @@
       "font_style": "italic",
     },
     {
-      "scope": "meta.import.js constant.other",
-      "foreground": "var(action_fg)",
-    },
-    {
-      "scope": "storage.type.class.js",
+      "scope": "meta.import.js constant.other, storage.type.class.js, storage.modifier.extends.js",
       "foreground": "var(action_fg)",
     },
     {
