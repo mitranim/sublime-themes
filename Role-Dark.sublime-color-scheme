@@ -67,7 +67,7 @@
 		},
 		{
 			"font_style": "bold italic",
-			"scope": "markup.bold markup.italic - punctuation.definition, markup.italic markup.bold - punctuation.definition"
+			"scope": "(markup.bold & markup.italic) - punctuation.definition"
 		},
 		{
 			"background": "var(raw_bg)",
