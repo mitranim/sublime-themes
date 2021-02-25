@@ -14,8 +14,8 @@ To find the packages directory on your system, use Sublime Text menu → Prefere
 
 Activate:
 
-    Command Palette -> UI: Select Color Scheme -> Role-Dark
-    Command Palette -> UI: Select Color Scheme -> Role-Light
+    Command Palette -> UI: Select Color Scheme -> Role Dark
+    Command Palette -> UI: Select Color Scheme -> Role Light
     Command Palette -> UI: Select Color Scheme -> Nether
     Command Palette -> UI: Select Color Scheme -> Cloud
 
@@ -26,6 +26,13 @@ Use the built-in Adaptive theme to match the color scheme:
 ## Modification
 
 `make.py` automatically rebuilds the themes on changes in `src`.
+
+## WIP Notes
+
+Missing but planned features for Role:
+
+* Support for numeric literals (color choice is hard).
+* Support for `source.diff`, `markup.deleted`, `markup.inserted`.
 
 ## License
 
