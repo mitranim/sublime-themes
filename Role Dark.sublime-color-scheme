@@ -87,6 +87,10 @@
 			"scope": "source.scss entity.other.attribute-name - meta.at-rule, source.scss entity.name.tag - meta.at-rule, source.scss entity.other.animation-name"
 		},
 		{
+			"foreground": "var(modifier_fg)",
+			"scope": "source.css support.type, source.scss support.type"
+		},
+		{
 			"font_style": "italic",
 			"foreground": "var(declaration_fg)",
 			"scope": "meta.import.js variable.other"

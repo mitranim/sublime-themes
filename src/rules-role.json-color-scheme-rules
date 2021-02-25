@@ -95,6 +95,10 @@
       "font_style": "italic",
     },
     {
+      "scope": "source.css support.type, source.scss support.type",
+      "foreground": "var(modifier_fg)",
+    },
+    {
       "scope": "meta.import.js variable.other",
       "foreground": "var(declaration_fg)",
       "font_style": "italic",
