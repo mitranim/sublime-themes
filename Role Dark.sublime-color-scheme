@@ -23,7 +23,7 @@
 		{
 			"font_style": "italic",
 			"foreground": "var(declaration_fg)",
-			"scope": "entity.name - entity.name.tag, variable.parameter, variable.declaration, variable.other.constant.declaration, meta.declaration variable.other,  meta.binding variable.other, variable.other.member.declaration"
+			"scope": "entity.name - entity.name.tag, variable.parameter, variable.declaration, variable.other.constant.declaration, meta.declaration variable.other, meta.binding variable.other, variable.other.member.declaration"
 		},
 		{
 			"foreground": "var(action_fg)",
@@ -97,7 +97,11 @@
 		},
 		{
 			"foreground": "var(action_fg)",
-			"scope": "meta.import.js constant.other, storage.type.class.js, storage.modifier.extends.js"
+			"scope": "meta.import.js constant.other, meta.export.js constant.other, storage.type.class.js, storage.modifier.extends.js, source.js support.function, source.jsx support.function, source.ts support.function, source.tsx support.function"
+		},
+		{
+			"foreground": "var(modifier_fg)",
+			"scope": "source.ts support.type, source.tsx support.type, source.ts support.class, source.tsx support.class"
 		},
 		{
 			"foreground": "var(action_fg)",
