@@ -7,8 +7,10 @@
     "action_fg":      "hsl(120, 80%, 80%)",
     "declaration_fg": "hsl(220, 75%, 90%)",
     "modifier_fg":    "hsl(240, 70%, 80%)",
-    "raw_bg":         "color(var(fg) alpha(0.04))",
+    "raw_bg":         "color(var(fg) alpha(0.05))",
     "illegal_fg":     "hsl(0, 100%, 60%)",
+    "deleted_fg":     "hsl(338, 95%, 56%)", // Copied from Nether, should revise.
+    "inserted_fg":    "hsl(80, 76%, 53%)",  // Copied from Nether, should revise.
     "invisible":      "hsl(0, 0%, 20%)",
     "selection":      "hsl(0, 0%, 30%)",
   },

@@ -74,6 +74,14 @@
 			"scope": "text constant.other.language-name"
 		},
 		{
+			"foreground": "var(deleted_fg)",
+			"scope": "markup.deleted, meta.header.from-file.diff"
+		},
+		{
+			"foreground": "var(inserted_fg)",
+			"scope": "markup.inserted, meta.header.to-file.diff"
+		},
+		{
 			"foreground": "var(action_fg)",
 			"scope": "keyword.declaration"
 		},
@@ -118,11 +126,13 @@
 		"bg": "hsl(200, 5%, 10%)",
 		"comment_fg": "hsl(60, 10%, 60%)",
 		"declaration_fg": "hsl(220, 75%, 90%)",
+		"deleted_fg": "hsl(338, 95%, 56%)",
 		"fg": "white",
 		"illegal_fg": "hsl(0, 100%, 60%)",
+		"inserted_fg": "hsl(80, 76%, 53%)",
 		"invisible": "hsl(0, 0%, 20%)",
 		"modifier_fg": "hsl(240, 70%, 80%)",
-		"raw_bg": "color(var(fg) alpha(0.04))",
+		"raw_bg": "color(var(fg) alpha(0.05))",
 		"selection": "hsl(0, 0%, 30%)"
 	}
 }

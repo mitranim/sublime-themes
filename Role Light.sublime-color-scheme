@@ -74,6 +74,14 @@
 			"scope": "text constant.other.language-name"
 		},
 		{
+			"foreground": "var(deleted_fg)",
+			"scope": "markup.deleted, meta.header.from-file.diff"
+		},
+		{
+			"foreground": "var(inserted_fg)",
+			"scope": "markup.inserted, meta.header.to-file.diff"
+		},
+		{
 			"foreground": "var(action_fg)",
 			"scope": "keyword.declaration"
 		},
