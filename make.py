@@ -8,7 +8,7 @@ DIR_SRC = pt.join(DIR, 'src')
 
 class ColorSchemeListener(sublime_plugin.EventListener):
     def on_post_save_async(self, view):
-        is_src = view.file_name().startswith(DIR_SRC + pt.sep)
+        is_src = pt.realpath(view.file_name()).startswith(DIR_SRC + pt.sep)
         if is_src:
             rebuild()
 
