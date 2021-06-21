@@ -9,6 +9,8 @@
     "modifier_fg":    "hsl(240, 70%, 30%)",
     "raw_bg":         "hsl(60, 20%, 93%)",
     "illegal_fg":     "hsl(0, 100%, 50%)",
+    "deleted_fg":     "hsl(0, 80%, 40%)",
+    "inserted_fg":    "hsl(120, 90%, 40%)",
     "invisible":      "hsl(0, 0%, 70%)",
     "selection":      "hsl(200, 80%, 90%)",
   },
