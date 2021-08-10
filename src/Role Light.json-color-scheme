@@ -8,7 +8,7 @@
     "declaration_fg": "hsl(200, 80%, 40%)",
     "modifier_fg":    "hsl(240, 70%, 30%)",
     "raw_bg":         "hsl(60, 25%, 93%)",
-    "const_fg":       "hsl(160, 100%, 30%)",
+    "const_fg":       "hsl(170, 100%, 30%)",
     "illegal_fg":     "hsl(0, 100%, 50%)",
     "deleted_fg":     "hsl(0, 80%, 40%)",
     "inserted_fg":    "hsl(120, 90%, 40%)",
