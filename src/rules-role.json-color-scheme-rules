@@ -43,6 +43,10 @@
       "scope": "constant.character.escape",
       "font_style": "bold",
     },
+    {
+      "scope": "constant.numeric, constant.language",
+      "foreground": "var(const_fg)",
+    },
 
     /* Markup */
 

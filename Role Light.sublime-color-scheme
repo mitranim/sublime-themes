@@ -46,6 +46,10 @@
 			"scope": "constant.character.escape"
 		},
 		{
+			"foreground": "var(const_fg)",
+			"scope": "constant.numeric, constant.language"
+		},
+		{
 			"background": "var(raw_bg)",
 			"scope": "markup.raw"
 		},
@@ -125,6 +129,7 @@
 		"action_fg": "hsl(120, 80%, 30%)",
 		"bg": "white",
 		"comment_fg": "hsl(60, 10%, 40%)",
+		"const_fg": "hsl(160, 100%, 30%)",
 		"declaration_fg": "hsl(200, 80%, 40%)",
 		"deleted_fg": "hsl(0, 80%, 40%)",
 		"fg": "black",
@@ -132,7 +137,7 @@
 		"inserted_fg": "hsl(120, 90%, 40%)",
 		"invisible": "hsl(0, 0%, 70%)",
 		"modifier_fg": "hsl(240, 70%, 30%)",
-		"raw_bg": "hsl(60, 20%, 93%)",
+		"raw_bg": "hsl(60, 25%, 93%)",
 		"selection": "hsl(200, 80%, 90%)"
 	}
 }
