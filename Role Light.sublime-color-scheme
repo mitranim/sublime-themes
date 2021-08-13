@@ -27,7 +27,7 @@
 		},
 		{
 			"foreground": "var(action_fg)",
-			"scope": "keyword, punctuation, variable.function, entity.name.tag, string constant.other.placeholder"
+			"scope": "keyword, punctuation, variable.function, entity.name.tag, string & constant.other.placeholder"
 		},
 		{
 			"foreground": "var(modifier_fg)",
@@ -75,7 +75,7 @@
 		},
 		{
 			"background": "var(raw_bg)",
-			"scope": "text constant.other.language-name"
+			"scope": "text & constant.other.language-name"
 		},
 		{
 			"foreground": "var(deleted_fg)",
@@ -91,16 +91,16 @@
 		},
 		{
 			"foreground": "var(action_fg)",
-			"scope": "source.rust support.function, source.rust support.macro"
+			"scope": "source.rust & (support.function | support.macro)"
 		},
 		{
 			"font_style": "italic",
 			"foreground": "var(declaration_fg)",
-			"scope": "source.scss entity.other.attribute-name - meta.at-rule, source.scss entity.name.tag - meta.at-rule, source.scss entity.other.animation-name"
+			"scope": "source.scss & ((entity.other.attribute-name - meta.at-rule) | (entity.name.tag - meta.at-rule) | entity.other.animation-name)"
 		},
 		{
 			"foreground": "var(modifier_fg)",
-			"scope": "source.css support.type, source.scss support.type"
+			"scope": "(source.css | source.scss) & support.type"
 		},
 		{
 			"font_style": "italic",
@@ -109,19 +109,19 @@
 		},
 		{
 			"foreground": "var(action_fg)",
-			"scope": "meta.import.js constant.other, meta.export.js constant.other, storage.type.class.js, storage.modifier.extends.js, source.js support.function, source.jsx support.function, source.ts support.function, source.tsx support.function"
+			"scope": "meta.import.js constant.other, meta.export.js constant.other, storage.type.class.js, storage.modifier.extends.js, (source.js | source.jsx | source.ts | source.tsx) & support.function"
 		},
 		{
 			"foreground": "var(modifier_fg)",
-			"scope": "source.ts support.type, source.tsx support.type, source.ts support.class, source.tsx support.class"
+			"scope": "(source.js | source.jsx | source.ts | source.tsx) & (support.type | support.class)"
 		},
 		{
 			"foreground": "var(action_fg)",
-			"scope": "source.shell support.function"
+			"scope": "source.shell & support.function"
 		},
 		{
 			"foreground": "var(modifier_fg)",
-			"scope": "source.haskell support.type, source.haskell support.class, source.haskell support.constant"
+			"scope": "source.haskell & (support.type | support.class | support.constant)"
 		}
 	],
 	"variables":

@@ -25,14 +25,7 @@ Use the built-in Adaptive theme to match the color scheme:
 
 ## Modification
 
-`make.py` automatically rebuilds the themes on changes in `src`.
-
-## WIP Notes
-
-Missing but planned features for Role:
-
-* Support for numeric literals (color choice is hard).
-* Support for `source.diff`, `markup.deleted`, `markup.inserted`.
+`make.py` automatically rebuilds the themes on changes in `src`, triggered by Sublime events.
 
 ## License
 
