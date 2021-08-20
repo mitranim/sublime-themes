@@ -27,7 +27,7 @@
 		},
 		{
 			"foreground": "var(action_fg)",
-			"scope": "keyword, punctuation, variable.function, entity.name.tag, string & constant.other.placeholder"
+			"scope": "keyword, punctuation, variable.function, entity.name.tag, (string & constant.other.placeholder)"
 		},
 		{
 			"foreground": "var(modifier_fg)",
@@ -39,7 +39,7 @@
 		},
 		{
 			"foreground": "var(illegal_fg)",
-			"scope": "invalid.illegal, invalid.deprecated"
+			"scope": "invalid"
 		},
 		{
 			"font_style": "bold",
@@ -75,7 +75,7 @@
 		},
 		{
 			"background": "var(raw_bg)",
-			"scope": "text & constant.other.language-name"
+			"scope": "(text & constant.other.language-name)"
 		},
 		{
 			"foreground": "var(deleted_fg)",
@@ -91,16 +91,7 @@
 		},
 		{
 			"foreground": "var(action_fg)",
-			"scope": "source.rust & (support.function | support.macro)"
-		},
-		{
-			"font_style": "italic",
-			"foreground": "var(declaration_fg)",
-			"scope": "source.scss & ((entity.other.attribute-name - meta.at-rule) | (entity.name.tag - meta.at-rule) | entity.other.animation-name)"
-		},
-		{
-			"foreground": "var(modifier_fg)",
-			"scope": "(source.css | source.scss) & support.type"
+			"scope": "(source.rust & (support.function | support.macro))"
 		},
 		{
 			"font_style": "italic",
@@ -109,19 +100,19 @@
 		},
 		{
 			"foreground": "var(action_fg)",
-			"scope": "meta.import.js constant.other, meta.export.js constant.other, storage.type.class.js, storage.modifier.extends.js, (source.js | source.jsx | source.ts | source.tsx) & support.function"
-		},
-		{
-			"foreground": "var(modifier_fg)",
-			"scope": "(source.js | source.jsx | source.ts | source.tsx) & (support.type | support.class)"
+			"scope": "meta.import.js constant.other, meta.export.js constant.other, storage.type.class.js, storage.modifier.extends.js, ((source.js | source.jsx | source.ts | source.tsx) & support.function)"
 		},
 		{
 			"foreground": "var(action_fg)",
-			"scope": "source.shell & support.function"
+			"scope": "(source.shell & support.function)"
 		},
 		{
 			"foreground": "var(modifier_fg)",
-			"scope": "source.haskell & (support.type | support.class | support.constant)"
+			"scope": "(source.haskell & (support.type | support.class | support.constant))"
+		},
+		{
+			"foreground": "var(comment_fg)",
+			"scope": "source.wast & (punctuation.definition - comment)"
 		}
 	],
 	"variables":
