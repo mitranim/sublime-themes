@@ -134,6 +134,11 @@
     {
       "scope": "source.wast & (punctuation.definition - comment)",
       "foreground": "var(comment_fg)",
-    }
+    },
+    {
+      "scope": "(source.css | source.scss) & entity.name.tag",
+      "foreground": "var(declaration_fg)",
+      "font_style": "italic",
+    },
   ],
 }
