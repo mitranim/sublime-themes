@@ -87,6 +87,14 @@
 		},
 		{
 			"foreground": "var(action_fg)",
+			"scope": "punctuation.definition.thematic-break.markdown"
+		},
+		{
+			"background": "var(raw_bg)",
+			"scope": "meta.separator.thematic-break.markdown"
+		},
+		{
+			"foreground": "var(action_fg)",
 			"scope": "keyword.declaration"
 		},
 		{

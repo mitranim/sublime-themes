@@ -89,6 +89,15 @@
       "scope": "markup.inserted, meta.header.to-file.diff",
       "foreground": "var(inserted_fg)",
     },
+    {
+      "scope": "punctuation.definition.thematic-break.markdown",
+      "foreground": "var(action_fg)",
+    },
+    // Questionable abuse of "raw".
+    {
+      "scope": "meta.separator.thematic-break.markdown",
+      "background": "var(raw_bg)",
+    },
 
     /* Overrides and special cases */
 
