@@ -115,10 +115,6 @@
 			"scope": "(source.shell & support.function)"
 		},
 		{
-			"foreground": "var(modifier_fg)",
-			"scope": "(source.haskell & (support.type | support.class | support.constant))"
-		},
-		{
 			"foreground": "var(comment_fg)",
 			"scope": "source.wast & (punctuation.definition - comment)"
 		},
@@ -132,7 +128,7 @@
 	{
 		"action_fg": "hsl(120, 80%, 80%)",
 		"bg": "hsl(200, 5%, 10%)",
-		"comment_fg": "hsl(60, 10%, 60%)",
+		"comment_fg": "hsl(60, 10%, 65%)",
 		"const_fg": "hsl(170, 100%, 70%)",
 		"declaration_fg": "hsl(220, 75%, 90%)",
 		"deleted_fg": "hsl(338, 95%, 56%)",

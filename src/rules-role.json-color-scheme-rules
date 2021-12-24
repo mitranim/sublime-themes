@@ -127,10 +127,14 @@
       "scope": "(source.shell & support.function)",
       "foreground": "var(action_fg)",
     },
-    {
-      "scope": "(source.haskell & (support.type | support.class | support.constant))",
-      "foreground": "var(modifier_fg)",
-    },
+    // {
+    //   "scope": "(source.haskell & (support.type | support.class | support.constant))",
+    //   "foreground": "var(modifier_fg)",
+    // },
+    // {
+    //   "scope": "source.haskell & constant.other",
+    //   "foreground": "var(action_fg)",
+    // },
     {
       "scope": "source.wast & (punctuation.definition - comment)",
       "foreground": "var(comment_fg)",

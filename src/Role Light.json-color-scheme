@@ -3,7 +3,7 @@
   "variables": {
     "bg":             "white",
     "fg":             "black",
-    "comment_fg":     "hsl(60, 10%, 40%)",
+    "comment_fg":     "hsl(60, 10%, 35%)",
     "action_fg":      "hsl(120, 80%, 30%)",
     "declaration_fg": "hsl(200, 80%, 40%)",
     "modifier_fg":    "hsl(240, 70%, 30%)",
