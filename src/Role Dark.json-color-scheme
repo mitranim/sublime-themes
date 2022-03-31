@@ -10,8 +10,8 @@
     "raw_bg":         "color(var(fg) alpha(0.05))",
     "const_fg":       "hsl(170, 100%, 70%)",
     "illegal_fg":     "hsl(0, 100%, 60%)",
-    "deleted_fg":     "hsl(338, 95%, 56%)", // Copied from Nether, should revise.
-    "inserted_fg":    "hsl(80, 76%, 53%)",  // Copied from Nether, should revise.
+    "deleted_fg":     "hsl(338, 95%, 56%)", // TODO revise.
+    "inserted_fg":    "hsl(80, 76%, 53%)",  // TODO revise.
     "invisible":      "hsl(0, 0%, 20%)",
     "selection":      "hsl(0, 0%, 30%)",
   },
