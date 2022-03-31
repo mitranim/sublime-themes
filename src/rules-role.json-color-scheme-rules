@@ -19,12 +19,12 @@
       "foreground": "var(comment_fg)",
     },
     {
-      "scope": "entity.name - entity.name.tag, variable.parameter, variable.declaration, variable.other.constant.declaration, meta.declaration variable.other, meta.binding variable.other, variable.other.member.declaration",
+      "scope": "entity.name - entity.name.tag, variable.parameter, variable.declaration, variable.other.constant.declaration, variable.other.readwrite.declaration, meta.declaration variable.other, meta.binding variable.other, variable.other.member.declaration",
       "foreground": "var(declaration_fg)",
       "font_style": "italic",
     },
     {
-      "scope": "keyword, punctuation, variable.function, entity.name.tag, (string & constant.other.placeholder)",
+      "scope": "keyword, punctuation, variable.function, entity.name.tag, (string & constant.other.placeholder), meta.keyword, meta.variable.function",
       "foreground": "var(action_fg)",
     },
     {
@@ -101,7 +101,7 @@
 
     /* Overrides and special cases */
 
-    // Avoid forward fill. Must be one simple selector.
+    // Negate built-in magic forward fill. Must be one simple selector.
     {
       "scope": "keyword.declaration",
       "foreground": "var(action_fg)",
@@ -111,30 +111,18 @@
       "foreground": "var(action_fg)",
     },
     {
-      "scope": "meta.import.js variable.other",
+      "scope": "meta.import.js variable.other, meta.export.js meta.binding.name variable.other - meta.block",
       "foreground": "var(declaration_fg)",
       "font_style": "italic",
     },
     {
-      "scope": "meta.import.js constant.other, meta.export.js constant.other, storage.type.class.js, storage.modifier.extends.js, ((source.js | source.jsx | source.ts | source.tsx) & support.function)",
+      "scope": "(meta.import.js | meta.export.js) & constant.other, storage.type.class.js, storage.modifier.extends.js, ((source.js | source.jsx | source.ts | source.tsx) & support.function), ((source.js | source.jsx | source.ts | source.tsx) & meta.property.object)",
       "foreground": "var(action_fg)",
     },
-    // {
-    //   "scope": "((source.js | source.jsx | source.ts | source.tsx) & (support.type | support.class))",
-    //   "foreground": "var(modifier_fg)",
-    // },
     {
       "scope": "(source.shell & support.function)",
       "foreground": "var(action_fg)",
     },
-    // {
-    //   "scope": "(source.haskell & (support.type | support.class | support.constant))",
-    //   "foreground": "var(modifier_fg)",
-    // },
-    // {
-    //   "scope": "source.haskell & constant.other",
-    //   "foreground": "var(action_fg)",
-    // },
     {
       "scope": "source.wast & (punctuation.definition - comment)",
       "foreground": "var(comment_fg)",
