@@ -18,20 +18,116 @@
 		},
 		{
 			"foreground": "var(comment_fg)",
-			"scope": "punctuation.section, punctuation.definition.interpolation, punctuation.definition.group, punctuation.separator, punctuation.terminator, variable.language.blank, variable.language.anonymous"
+			"scope": "punctuation.section"
+		},
+		{
+			"foreground": "var(comment_fg)",
+			"scope": "punctuation.definition.interpolation"
+		},
+		{
+			"foreground": "var(comment_fg)",
+			"scope": "punctuation.definition.group"
+		},
+		{
+			"foreground": "var(comment_fg)",
+			"scope": "punctuation.separator"
+		},
+		{
+			"foreground": "var(comment_fg)",
+			"scope": "punctuation.terminator"
+		},
+		{
+			"foreground": "var(comment_fg)",
+			"scope": "variable.language.blank"
+		},
+		{
+			"foreground": "var(comment_fg)",
+			"scope": "variable.language.anonymous"
 		},
 		{
 			"font_style": "italic",
 			"foreground": "var(declaration_fg)",
-			"scope": "entity.name - entity.name.tag, variable.parameter, variable.declaration, variable.other.constant.declaration, variable.other.readwrite.declaration, meta.declaration variable.other, meta.binding variable.other, variable.other.member.declaration"
+			"scope": "entity.name - entity.name.tag"
+		},
+		{
+			"font_style": "italic",
+			"foreground": "var(declaration_fg)",
+			"scope": "variable.parameter"
+		},
+		{
+			"font_style": "italic",
+			"foreground": "var(declaration_fg)",
+			"scope": "variable.declaration"
+		},
+		{
+			"font_style": "italic",
+			"foreground": "var(declaration_fg)",
+			"scope": "variable.other.constant.declaration"
+		},
+		{
+			"font_style": "italic",
+			"foreground": "var(declaration_fg)",
+			"scope": "variable.other.readwrite.declaration"
+		},
+		{
+			"font_style": "italic",
+			"foreground": "var(declaration_fg)",
+			"scope": "meta.declaration variable.other"
+		},
+		{
+			"font_style": "italic",
+			"foreground": "var(declaration_fg)",
+			"scope": "meta.binding variable.other"
+		},
+		{
+			"font_style": "italic",
+			"foreground": "var(declaration_fg)",
+			"scope": "meta.binding variable.language"
+		},
+		{
+			"font_style": "italic",
+			"foreground": "var(declaration_fg)",
+			"scope": "variable.other.member.declaration"
 		},
 		{
 			"foreground": "var(action_fg)",
-			"scope": "keyword, punctuation, variable.function, entity.name.tag, (string & constant.other.placeholder), meta.keyword, meta.variable.function"
+			"scope": "keyword"
+		},
+		{
+			"foreground": "var(action_fg)",
+			"scope": "punctuation"
+		},
+		{
+			"foreground": "var(action_fg)",
+			"scope": "variable.function"
+		},
+		{
+			"foreground": "var(action_fg)",
+			"scope": "entity.name.tag"
+		},
+		{
+			"foreground": "var(action_fg)",
+			"scope": "string & constant.other.placeholder"
+		},
+		{
+			"foreground": "var(action_fg)",
+			"scope": "meta.keyword"
+		},
+		{
+			"foreground": "var(action_fg)",
+			"scope": "meta.variable.function"
 		},
 		{
 			"foreground": "var(modifier_fg)",
-			"scope": "storage, entity.other.inherited-class, punctuation.definition"
+			"scope": "storage"
+		},
+		{
+			"foreground": "var(modifier_fg)",
+			"scope": "entity.other.inherited-class"
+		},
+		{
+			"foreground": "var(modifier_fg)",
+			"scope": "punctuation.definition"
 		},
 		{
 			"background": "var(raw_bg)",
@@ -47,7 +143,11 @@
 		},
 		{
 			"foreground": "var(const_fg)",
-			"scope": "constant.numeric, constant.language"
+			"scope": "constant.numeric"
+		},
+		{
+			"foreground": "var(const_fg)",
+			"scope": "constant.language"
 		},
 		{
 			"background": "var(raw_bg)",
@@ -55,7 +155,7 @@
 		},
 		{
 			"background": "var(raw_bg)",
-			"scope": "meta.link.inline.description"
+			"scope": "meta.link.inline.description - punctuation.definition.link"
 		},
 		{
 			"background": "var(raw_bg)",
@@ -70,20 +170,32 @@
 			"scope": "markup.bold - punctuation.definition"
 		},
 		{
+			"font_style": "bold",
+			"scope": "markup.heading - punctuation.definition"
+		},
+		{
 			"font_style": "bold italic",
 			"scope": "(markup.bold & markup.italic) - punctuation.definition"
 		},
 		{
 			"background": "var(raw_bg)",
-			"scope": "(text & constant.other.language-name)"
+			"scope": "text & constant.other.language-name"
 		},
 		{
 			"foreground": "var(deleted_fg)",
-			"scope": "markup.deleted, meta.header.from-file.diff"
+			"scope": "markup.deleted"
+		},
+		{
+			"foreground": "var(deleted_fg)",
+			"scope": "meta.header.from-file.diff"
 		},
 		{
 			"foreground": "var(inserted_fg)",
-			"scope": "markup.inserted, meta.header.to-file.diff"
+			"scope": "markup.inserted"
+		},
+		{
+			"foreground": "var(inserted_fg)",
+			"scope": "meta.header.to-file.diff"
 		},
 		{
 			"foreground": "var(action_fg)",
@@ -99,20 +211,41 @@
 		},
 		{
 			"foreground": "var(action_fg)",
-			"scope": "(source.rust & (support.function | support.macro))"
+			"scope": "source.rust & (support.function | support.macro)"
 		},
 		{
 			"font_style": "italic",
 			"foreground": "var(declaration_fg)",
-			"scope": "meta.import.js variable.other, meta.export.js meta.binding.name variable.other - meta.block"
+			"scope": "meta.import.js variable.other"
+		},
+		{
+			"font_style": "italic",
+			"foreground": "var(declaration_fg)",
+			"scope": "meta.export.js meta.binding.name (variable.other | variable.language | support.type.object) - meta.block"
 		},
 		{
 			"foreground": "var(action_fg)",
-			"scope": "(meta.import.js | meta.export.js) & constant.other, storage.type.class.js, storage.modifier.extends.js, ((source.js | source.jsx | source.ts | source.tsx) & support.function), ((source.js | source.jsx | source.ts | source.tsx) & meta.property.object)"
+			"scope": "(meta.import.js | meta.export.js) & constant.other"
 		},
 		{
 			"foreground": "var(action_fg)",
-			"scope": "(source.shell & support.function)"
+			"scope": "storage.type.class.js"
+		},
+		{
+			"foreground": "var(action_fg)",
+			"scope": "storage.modifier.extends.js"
+		},
+		{
+			"foreground": "var(action_fg)",
+			"scope": "(source.js | source.jsx | source.ts | source.tsx) & support.function"
+		},
+		{
+			"foreground": "var(action_fg)",
+			"scope": "(source.js | source.jsx | source.ts | source.tsx) & meta.property.object"
+		},
+		{
+			"foreground": "var(action_fg)",
+			"scope": "source.shell & support.function"
 		},
 		{
 			"foreground": "var(comment_fg)",
