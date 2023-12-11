@@ -72,7 +72,7 @@
 		{
 			"font_style": "italic",
 			"foreground": "var(declaration_fg)",
-			"scope": "meta.declaration variable.other"
+			"scope": "(meta.declaration - meta.variable) & variable.other"
 		},
 		{
 			"font_style": "italic",
@@ -225,15 +225,15 @@
 		},
 		{
 			"foreground": "var(action_fg)",
-			"scope": "(meta.import.js | meta.export.js) & constant.other"
+			"scope": "(source.js | source.jsx | source.ts | source.tsx) & (meta.import | meta.export) & constant.other"
 		},
 		{
 			"foreground": "var(action_fg)",
-			"scope": "storage.type.class.js"
+			"scope": "(source.js | source.jsx | source.ts | source.tsx) & storage.type.class"
 		},
 		{
 			"foreground": "var(action_fg)",
-			"scope": "storage.modifier.extends.js"
+			"scope": "(source.js | source.jsx | source.ts | source.tsx) & storage.modifier.extends"
 		},
 		{
 			"foreground": "var(action_fg)",
@@ -242,6 +242,10 @@
 		{
 			"foreground": "var(action_fg)",
 			"scope": "(source.js | source.jsx | source.ts | source.tsx) & meta.property.object"
+		},
+		{
+			"foreground": "var(modifier_fg)",
+			"scope": "(source.js | source.jsx | source.ts | source.tsx) & keyword.declaration.async"
 		},
 		{
 			"foreground": "var(action_fg)",

@@ -24,7 +24,7 @@
     {"foreground": "var(declaration_fg)", "font_style": "italic", "scope": "variable.declaration"},
     {"foreground": "var(declaration_fg)", "font_style": "italic", "scope": "variable.other.constant.declaration"},
     {"foreground": "var(declaration_fg)", "font_style": "italic", "scope": "variable.other.readwrite.declaration"},
-    {"foreground": "var(declaration_fg)", "font_style": "italic", "scope": "meta.declaration variable.other"},
+    {"foreground": "var(declaration_fg)", "font_style": "italic", "scope": "(meta.declaration - meta.variable) & variable.other"},
     {"foreground": "var(declaration_fg)", "font_style": "italic", "scope": "meta.binding variable.other"},
     {"foreground": "var(declaration_fg)", "font_style": "italic", "scope": "meta.binding variable.language"},
     {"foreground": "var(declaration_fg)", "font_style": "italic", "scope": "variable.other.member.declaration"},
@@ -89,11 +89,13 @@
     {"foreground": "var(declaration_fg)", "font_style": "italic", "scope": "meta.import.js variable.other"},
     {"foreground": "var(declaration_fg)", "font_style": "italic", "scope": "meta.export.js meta.binding.name (variable.other | variable.language | support.type.object) - meta.block"},
 
-    {"foreground": "var(action_fg)", "scope": "(meta.import.js | meta.export.js) & constant.other"},
-    {"foreground": "var(action_fg)", "scope": "storage.type.class.js"},
-    {"foreground": "var(action_fg)", "scope": "storage.modifier.extends.js"},
+    {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & (meta.import | meta.export) & constant.other"},
+    {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & storage.type.class"},
+    {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & storage.modifier.extends"},
     {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & support.function"},
     {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & meta.property.object"},
+    // {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & entity.other.inherited-class"},
+    {"foreground": "var(modifier_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & keyword.declaration.async"},
 
     {"foreground": "var(action_fg)", "scope": "source.shell & support.function"},
 
