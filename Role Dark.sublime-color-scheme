@@ -225,7 +225,7 @@
 		},
 		{
 			"foreground": "var(action_fg)",
-			"scope": "(source.js | source.jsx | source.ts | source.tsx) & (meta.import | meta.export) & constant.other"
+			"scope": "(source.js | source.jsx | source.ts | source.tsx) & (meta.import | meta.export) & constant.other - meta.block"
 		},
 		{
 			"foreground": "var(action_fg)",
@@ -241,7 +241,7 @@
 		},
 		{
 			"foreground": "var(action_fg)",
-			"scope": "(source.js | source.jsx | source.ts | source.tsx) & meta.property.object"
+			"scope": "(source.js | source.jsx | source.ts | source.tsx) & (meta.property.object - entity.name.function)"
 		},
 		{
 			"foreground": "var(modifier_fg)",
