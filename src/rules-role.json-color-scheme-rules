@@ -93,9 +93,11 @@
     {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & storage.type.class"},
     {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & storage.modifier.extends"},
     {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & support.function"},
-    {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & (meta.property.object - entity.name.function)"},
-    // {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & entity.other.inherited-class"},
+    {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & support.constant.prototype"},
+    // {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & (meta.property.object - entity.name.function)"},
+    // {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & (meta.function-call support.class - meta.function-call.constructor)"},
     {"foreground": "var(modifier_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & keyword.declaration.async"},
+    {"background": "var(raw_bg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & entity.name.tag.native"},
 
     {"foreground": "var(action_fg)", "scope": "source.shell & support.function"},
 
