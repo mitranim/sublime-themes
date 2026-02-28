@@ -15,6 +15,7 @@
     {"foreground": "var(comment_fg)", "scope": "punctuation.definition.interpolation"},
     {"foreground": "var(comment_fg)", "scope": "punctuation.definition.group"},
     {"foreground": "var(comment_fg)", "scope": "punctuation.separator"},
+    {"foreground": "var(comment_fg)", "scope": "punctuation.accessor"},
     {"foreground": "var(comment_fg)", "scope": "punctuation.terminator"},
     {"foreground": "var(comment_fg)", "scope": "variable.language.blank"},
     {"foreground": "var(comment_fg)", "scope": "variable.language.anonymous"},
@@ -36,12 +37,13 @@
     {"foreground": "var(action_fg)", "scope": "string & constant.other.placeholder"},
     {"foreground": "var(action_fg)", "scope": "meta.keyword"},
     {"foreground": "var(action_fg)", "scope": "meta.variable.function"},
+    {"foreground": "var(action_fg)", "scope": "meta.function-call & support.function"},
 
     {"foreground": "var(modifier_fg)", "scope": "storage"},
     {"foreground": "var(modifier_fg)", "scope": "entity.other.inherited-class"},
     {"foreground": "var(modifier_fg)", "scope": "punctuation.definition"},
 
-    {"background": "var(raw_bg)", "scope": "string"},
+    {"foreground": "var(raw_fg)", "background": "var(raw_bg)", "scope": "string"},
 
     {"foreground": "var(illegal_fg)", "scope": "invalid"},
 
@@ -57,11 +59,13 @@
     {"background": "var(raw_bg)", "scope": "markup.underline.link"},
 
     {"font_style": "italic", "scope": "markup.italic - punctuation.definition"},
-
     {"font_style": "bold", "scope": "markup.bold - punctuation.definition"},
-    {"font_style": "bold", "scope": "markup.heading - punctuation.definition"},
-
     {"font_style": "bold italic", "scope": "(markup.bold & markup.italic) - punctuation.definition"},
+
+    {"font_style": "bold", "scope": "markup.heading - punctuation.definition"},
+    {"foreground": "var(fg)", "font_style": "bold", "scope": "markup.heading & entity.name.section - punctuation.definition"},
+    {"foreground": "var(comment_fg)", "font_style": "bold", "scope": "markup.heading & entity.name.section - punctuation.definition & comment"},
+    {"foreground": "var(modifier_fg)", "font_style": "", "scope": "markup.heading & entity.name.section & punctuation.definition"},
 
     // Semantically, this could be considered a "label" in the vein similar to a
     // struct field in a struct literal. If we ever allocate a color for that,
@@ -83,26 +87,90 @@
 
     // Negate built-in magic forward fill. Must be one simple selector.
     {"foreground": "var(action_fg)", "scope": "keyword.declaration"},
+    // {"foreground": "var(keyword_fg)", "scope": "keyword.declaration"},
 
+    // Go
+    {"foreground": "var(modifier_fg)", "scope": "source.go & (support.type - variable.function)"},
+
+    // Rust
     {"foreground": "var(action_fg)", "scope": "source.rust & (support.function | support.macro)"},
+    {"foreground": "var(action_fg)", "scope": "source.rust & storage.modifier"},
+    {"foreground": "var(action_fg)", "scope": "source.rust & punctuation.definition.generic"},
+    {"foreground": "var(action_fg)", "scope": "source.rust & punctuation.definition.annotation"},
+    {"foreground": "var(action_fg)", "scope": "source.rust & storage.type.impl"},
+    {"foreground": "var(modifier_fg)", "scope": "source.rust & support.type"},
+    {"foreground": "var(declaration_fg)", "font_style": "italic", "scope": "source.rust & meta.struct & variable.other.member"},
+    {"foreground": "var(declaration_fg)", "font_style": "italic", "scope": "source.rust & meta.enum.rust & storage.type.rust - meta.group.rust"},
 
+    // JS
     {"foreground": "var(declaration_fg)", "font_style": "italic", "scope": "meta.import.js variable.other"},
     {"foreground": "var(declaration_fg)", "font_style": "italic", "scope": "meta.export.js meta.binding.name (variable.other | variable.language | support.type.object) - meta.block"},
-
     {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & (meta.import | meta.export) & constant.other - meta.block"},
     {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & storage.type.class"},
     {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & storage.modifier.extends"},
     {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & support.function"},
     {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & support.constant.prototype"},
+    {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & (variable.type & meta.function-call.constructor)"},
     // {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & (meta.property.object - entity.name.function)"},
     // {"foreground": "var(action_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & (meta.function-call support.class - meta.function-call.constructor)"},
     {"foreground": "var(modifier_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & keyword.declaration.async"},
+    {"foreground": "var(modifier_fg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & (support.type - support.type.object)"},
     {"background": "var(raw_bg)", "scope": "(source.js | source.jsx | source.ts | source.tsx) & entity.name.tag.native"},
 
+    // Python
+    {"foreground": "var(action_fg)", "scope": "source.python & (meta.function-call.identifier support.type)"},
+
+    // Shell
     {"foreground": "var(action_fg)", "scope": "source.shell & support.function"},
 
+    // WASM
     {"foreground": "var(comment_fg)", "scope": "source.wast & (punctuation.definition - comment)"},
 
+    // CSS
     {"foreground": "var(declaration_fg)", "font_style": "italic", "scope": "(source.css | source.scss) & entity.name.tag"},
+
+    // Java
+    {"foreground": "var(modifier_fg)", "scope": "source.java & support.class & (meta.declaration.type | meta.function.parameters | meta.function.return-type | meta.instanceof | meta.cast)"},
+    // {"foreground": "var(modifier_fg)", "scope": "(source.java & support.class) - (meta.instantiation)"},
+
+    // Regex
+    {"font_style": "bold", "scope": "support.class.character-class.regexp"},
+    {"foreground": "var(modifier_fg)", "scope": "constant.other.assertion.regexp"},
+
+    // C
+    {"foreground": "var(modifier_fg)", "scope": "(source.c & support.type)"},
+
+    // Forth
+    {"foreground": "var(modifier_fg)", "scope": "storage.modifier.forth & punctuation.section"},
+
+    /*
+    https://github.com/iovdin/tune
+
+    The syntax uses weird scoping for chat "roles" in order to color-code them,
+    based on some unknown color scheme incompatible with our rules. So we have
+    to color-code the roles ourselves.
+    */
+    {
+      "foreground": "var(modifier_fg)",
+      "scope": "meta.role.system.chat keyword.constant.chat",
+    },
+    {
+      "foreground": "var(declaration_fg)",
+      "scope": "meta.role.user.chat keyword.declaration.chat",
+    },
+    {
+      "foreground": "var(const_fg)",
+      "scope": "meta.role.assistant.chat keyword.namespace.chat",
+    },
+    // tool_call
+    {
+      "foreground": "var(deleted_fg)",
+      "scope": "meta.role.tool.chat keyword.reserved.chat",
+    },
+    // tool_result
+    {
+      "foreground": "var(inserted_fg)",
+      "scope": "meta.role.tool.chat keyword.pseudo.chat",
+    },
   ],
 }

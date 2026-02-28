@@ -3,11 +3,12 @@
   "variables": {
     "bg":             "hsl(200, 5%, 10%)",
     "fg":             "white",
-    "comment_fg":     "hsl(60, 10%, 65%)",
+    "comment_fg":     "hsl(60, 10%, 74%)",
     "action_fg":      "hsl(120, 80%, 80%)",
     "declaration_fg": "hsl(220, 75%, 90%)",
     "modifier_fg":    "hsl(240, 70%, 80%)",
-    "raw_bg":         "color(var(fg) alpha(0.05))",
+    "raw_bg":         "color(var(fg) alpha(0.06))",
+    "raw_fg":         "hsl(60, 50%, 95%)",
     "const_fg":       "hsl(170, 100%, 70%)",
     "illegal_fg":     "hsl(0, 100%, 60%)",
     "deleted_fg":     "hsl(338, 95%, 56%)", // TODO revise.

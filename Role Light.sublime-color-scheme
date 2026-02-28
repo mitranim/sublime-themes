@@ -34,6 +34,10 @@
 		},
 		{
 			"foreground": "var(comment_fg)",
+			"scope": "punctuation.accessor"
+		},
+		{
+			"foreground": "var(comment_fg)",
 			"scope": "punctuation.terminator"
 		},
 		{
@@ -118,6 +122,10 @@
 			"scope": "meta.variable.function"
 		},
 		{
+			"foreground": "var(action_fg)",
+			"scope": "meta.function-call & support.function"
+		},
+		{
 			"foreground": "var(modifier_fg)",
 			"scope": "storage"
 		},
@@ -131,6 +139,7 @@
 		},
 		{
 			"background": "var(raw_bg)",
+			"foreground": "var(raw_fg)",
 			"scope": "string"
 		},
 		{
@@ -170,12 +179,27 @@
 			"scope": "markup.bold - punctuation.definition"
 		},
 		{
+			"font_style": "bold italic",
+			"scope": "(markup.bold & markup.italic) - punctuation.definition"
+		},
+		{
 			"font_style": "bold",
 			"scope": "markup.heading - punctuation.definition"
 		},
 		{
-			"font_style": "bold italic",
-			"scope": "(markup.bold & markup.italic) - punctuation.definition"
+			"font_style": "bold",
+			"foreground": "var(fg)",
+			"scope": "markup.heading & entity.name.section - punctuation.definition"
+		},
+		{
+			"font_style": "bold",
+			"foreground": "var(comment_fg)",
+			"scope": "markup.heading & entity.name.section - punctuation.definition & comment"
+		},
+		{
+			"font_style": "",
+			"foreground": "var(modifier_fg)",
+			"scope": "markup.heading & entity.name.section & punctuation.definition"
 		},
 		{
 			"background": "var(raw_bg)",
@@ -210,8 +234,42 @@
 			"scope": "keyword.declaration"
 		},
 		{
+			"foreground": "var(modifier_fg)",
+			"scope": "source.go & (support.type - variable.function)"
+		},
+		{
 			"foreground": "var(action_fg)",
 			"scope": "source.rust & (support.function | support.macro)"
+		},
+		{
+			"foreground": "var(action_fg)",
+			"scope": "source.rust & storage.modifier"
+		},
+		{
+			"foreground": "var(action_fg)",
+			"scope": "source.rust & punctuation.definition.generic"
+		},
+		{
+			"foreground": "var(action_fg)",
+			"scope": "source.rust & punctuation.definition.annotation"
+		},
+		{
+			"foreground": "var(action_fg)",
+			"scope": "source.rust & storage.type.impl"
+		},
+		{
+			"foreground": "var(modifier_fg)",
+			"scope": "source.rust & support.type"
+		},
+		{
+			"font_style": "italic",
+			"foreground": "var(declaration_fg)",
+			"scope": "source.rust & meta.struct & variable.other.member"
+		},
+		{
+			"font_style": "italic",
+			"foreground": "var(declaration_fg)",
+			"scope": "source.rust & meta.enum.rust & storage.type.rust - meta.group.rust"
 		},
 		{
 			"font_style": "italic",
@@ -244,12 +302,24 @@
 			"scope": "(source.js | source.jsx | source.ts | source.tsx) & support.constant.prototype"
 		},
 		{
+			"foreground": "var(action_fg)",
+			"scope": "(source.js | source.jsx | source.ts | source.tsx) & (variable.type & meta.function-call.constructor)"
+		},
+		{
 			"foreground": "var(modifier_fg)",
 			"scope": "(source.js | source.jsx | source.ts | source.tsx) & keyword.declaration.async"
 		},
 		{
+			"foreground": "var(modifier_fg)",
+			"scope": "(source.js | source.jsx | source.ts | source.tsx) & (support.type - support.type.object)"
+		},
+		{
 			"background": "var(raw_bg)",
 			"scope": "(source.js | source.jsx | source.ts | source.tsx) & entity.name.tag.native"
+		},
+		{
+			"foreground": "var(action_fg)",
+			"scope": "source.python & (meta.function-call.identifier support.type)"
 		},
 		{
 			"foreground": "var(action_fg)",
@@ -263,6 +333,46 @@
 			"font_style": "italic",
 			"foreground": "var(declaration_fg)",
 			"scope": "(source.css | source.scss) & entity.name.tag"
+		},
+		{
+			"foreground": "var(modifier_fg)",
+			"scope": "source.java & support.class & (meta.declaration.type | meta.function.parameters | meta.function.return-type | meta.instanceof | meta.cast)"
+		},
+		{
+			"font_style": "bold",
+			"scope": "support.class.character-class.regexp"
+		},
+		{
+			"foreground": "var(modifier_fg)",
+			"scope": "constant.other.assertion.regexp"
+		},
+		{
+			"foreground": "var(modifier_fg)",
+			"scope": "(source.c & support.type)"
+		},
+		{
+			"foreground": "var(modifier_fg)",
+			"scope": "storage.modifier.forth & punctuation.section"
+		},
+		{
+			"foreground": "var(modifier_fg)",
+			"scope": "meta.role.system.chat keyword.constant.chat"
+		},
+		{
+			"foreground": "var(declaration_fg)",
+			"scope": "meta.role.user.chat keyword.declaration.chat"
+		},
+		{
+			"foreground": "var(const_fg)",
+			"scope": "meta.role.assistant.chat keyword.namespace.chat"
+		},
+		{
+			"foreground": "var(deleted_fg)",
+			"scope": "meta.role.tool.chat keyword.reserved.chat"
+		},
+		{
+			"foreground": "var(inserted_fg)",
+			"scope": "meta.role.tool.chat keyword.pseudo.chat"
 		}
 	],
 	"variables":
@@ -277,8 +387,9 @@
 		"illegal_fg": "hsl(0, 100%, 50%)",
 		"inserted_fg": "hsl(120, 90%, 40%)",
 		"invisible": "hsl(0, 0%, 70%)",
-		"modifier_fg": "hsl(240, 70%, 30%)",
+		"modifier_fg": "hsl(240, 70%, 35%)",
 		"raw_bg": "hsl(60, 25%, 93%)",
+		"raw_fg": "hsl(60, 70%, 11%)",
 		"selection": "hsl(200, 80%, 90%)"
 	}
 }
