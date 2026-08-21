@@ -15,5 +15,6 @@
     "inserted_fg":    "hsl(80, 76%, 53%)",  // TODO revise.
     "invisible":      "hsl(0, 0%, 20%)",
     "selection":      "hsl(0, 0%, 30%)",
+    "line":           "var(invisible)",
   },
 }

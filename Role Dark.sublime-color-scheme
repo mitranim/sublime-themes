@@ -5,7 +5,7 @@
 		"caret": "var(fg)",
 		"foreground": "var(fg)",
 		"invisibles": "var(invisible)",
-		"line_highlight": "var(selection)",
+		"line_highlight": "var(line)",
 		"selection": "var(selection)",
 		"selection_border": "var(bg)"
 	},
@@ -18,27 +18,7 @@
 		},
 		{
 			"foreground": "var(comment_fg)",
-			"scope": "punctuation.section"
-		},
-		{
-			"foreground": "var(comment_fg)",
-			"scope": "punctuation.definition.interpolation"
-		},
-		{
-			"foreground": "var(comment_fg)",
-			"scope": "punctuation.definition.group"
-		},
-		{
-			"foreground": "var(comment_fg)",
-			"scope": "punctuation.separator"
-		},
-		{
-			"foreground": "var(comment_fg)",
-			"scope": "punctuation.accessor"
-		},
-		{
-			"foreground": "var(comment_fg)",
-			"scope": "punctuation.terminator"
+			"scope": "punctuation"
 		},
 		{
 			"foreground": "var(comment_fg)",
@@ -99,10 +79,6 @@
 		},
 		{
 			"foreground": "var(action_fg)",
-			"scope": "punctuation"
-		},
-		{
-			"foreground": "var(action_fg)",
 			"scope": "variable.function"
 		},
 		{
@@ -138,6 +114,10 @@
 			"scope": "punctuation.definition"
 		},
 		{
+			"foreground": "var(modifier_fg)",
+			"scope": "meta.number.integer constant.numeric.base"
+		},
+		{
 			"background": "var(raw_bg)",
 			"foreground": "var(raw_fg)",
 			"scope": "string"
@@ -152,11 +132,23 @@
 		},
 		{
 			"foreground": "var(const_fg)",
-			"scope": "constant.numeric"
+			"scope": "constant.language"
 		},
 		{
 			"foreground": "var(const_fg)",
-			"scope": "constant.language"
+			"scope": "constant.other"
+		},
+		{
+			"foreground": "var(const_fg)",
+			"scope": "constant.numeric - constant.numeric.prefix - constant.numeric.suffix"
+		},
+		{
+			"foreground": "var(modifier_fg)",
+			"scope": "constant.numeric & constant.numeric.prefix"
+		},
+		{
+			"foreground": "var(modifier_fg)",
+			"scope": "constant.numeric & constant.numeric.suffix"
 		},
 		{
 			"background": "var(raw_bg)",
@@ -348,7 +340,19 @@
 		},
 		{
 			"foreground": "var(modifier_fg)",
-			"scope": "(source.c & support.type)"
+			"scope": "source.c support.type"
+		},
+		{
+			"foreground": "var(const_fg)",
+			"scope": "source.c meta.number.integer.decimal invalid.illegal"
+		},
+		{
+			"foreground": "var(illegal_fg)",
+			"scope": "meta.number.integer.octal.c constant.numeric.base"
+		},
+		{
+			"foreground": "var(illegal_fg)",
+			"scope": "source.c meta.number.integer.octal constant.numeric"
 		},
 		{
 			"foreground": "var(modifier_fg)",
@@ -387,6 +391,7 @@
 		"illegal_fg": "hsl(0, 100%, 60%)",
 		"inserted_fg": "hsl(80, 76%, 53%)",
 		"invisible": "hsl(0, 0%, 20%)",
+		"line": "var(invisible)",
 		"modifier_fg": "hsl(240, 70%, 80%)",
 		"raw_bg": "color(var(fg) alpha(0.06))",
 		"raw_fg": "hsl(60, 50%, 95%)",

@@ -15,5 +15,6 @@
     "inserted_fg":    "hsl(120, 90%, 40%)",
     "invisible":      "hsl(0, 0%, 70%)",
     "selection":      "hsl(200, 80%, 90%)",
+    "line":           "color(var(fg) alpha(0.07))",
   },
 }
